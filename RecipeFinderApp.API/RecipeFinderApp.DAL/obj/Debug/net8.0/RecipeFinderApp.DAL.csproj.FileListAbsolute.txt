@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\bin\Debug\net8.0\RecipeFinderApp.DAL.deps.json
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\bin\Debug\net8.0\RecipeFinderApp.DAL.runtimeconfig.json
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\bin\Debug\net8.0\RecipeFinderApp.DAL.dll
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\bin\Debug\net8.0\RecipeFinderApp.DAL.pdb
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\bin\Debug\net8.0\RecipeFinderApp.Core.dll
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\bin\Debug\net8.0\RecipeFinderApp.Core.pdb
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\RecipeFinderApp.DAL.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\RecipeFinderApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\RecipeFinderApp.DAL.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\RecipeFinderApp.DAL.AssemblyInfo.cs
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\RecipeFinderApp.DAL.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\RecipeFi.BA792B55.Up2Date
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\RecipeFinderApp.DAL.dll
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\refint\RecipeFinderApp.DAL.dll
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\RecipeFinderApp.DAL.pdb
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\RecipeFinderApp.DAL.genruntimeconfig.cache
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\ref\RecipeFinderApp.DAL.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RecipeFinderApp.API.props" />
+</Project>

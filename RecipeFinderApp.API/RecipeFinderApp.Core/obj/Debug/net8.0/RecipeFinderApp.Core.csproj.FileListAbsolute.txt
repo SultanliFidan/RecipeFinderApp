@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\bin\Debug\net8.0\RecipeFinderApp.Core.deps.json
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\bin\Debug\net8.0\RecipeFinderApp.Core.dll
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\bin\Debug\net8.0\RecipeFinderApp.Core.pdb
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\RecipeFinderApp.Core.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\RecipeFinderApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\RecipeFinderApp.Core.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\RecipeFinderApp.Core.AssemblyInfo.cs
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\RecipeFinderApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\RecipeFinderApp.Core.dll
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\refint\RecipeFinderApp.Core.dll
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\RecipeFinderApp.Core.pdb
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\ref\RecipeFinderApp.Core.dll
