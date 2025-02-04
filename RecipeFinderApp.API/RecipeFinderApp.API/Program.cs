@@ -1,5 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
+using RecipeFinderApp.DAL;
 using RecipeFinderApp.DAL.Context;
 
 namespace RecipeFinderApp.API
@@ -14,6 +15,9 @@ namespace RecipeFinderApp.API
 
             builder.Services.AddDbContext<RecipeFinderDbContext>(opt =>
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("MsSql")));
+
+            builder.Services.AddAutoMapper(typeof(Program));
+            builder.Services.AddRepositories();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

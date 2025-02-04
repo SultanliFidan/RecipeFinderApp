@@ -3,20 +3,152 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\userfavoriterecipedtos\\userfavoriterecipecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\userfavoriterecipedtos\\userfavoriterecipecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98E1C38B-CC73-4702-A30F-CB45A06A9868}|RecipeFinderApp.API\\RecipeFinderApp.API.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98E1C38B-CC73-4702-A30F-CB45A06A9868}|RecipeFinderApp.API\\RecipeFinderApp.API.csproj|solutionrelative:recipefinderapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\userfavoriterecipedtos\\userfavoriterecipegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\userfavoriterecipedtos\\userfavoriterecipegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.dal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|solutionrelative:recipefinderapp.dal\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.dal\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|solutionrelative:recipefinderapp.dal\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.dal\\repositories\\iuserfavoritereciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|solutionrelative:recipefinderapp.dal\\repositories\\iuserfavoritereciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\entities\\userfavoriterecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\entities\\userfavoriterecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\repositories\\iuserfavoritereciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\repositories\\iuserfavoritereciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.dal\\repositories\\reciperatingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|solutionrelative:recipefinderapp.dal\\repositories\\reciperatingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.dal\\repositories\\recipeingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|solutionrelative:recipefinderapp.dal\\repositories\\recipeingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.dal\\repositories\\recipecommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|solutionrelative:recipefinderapp.dal\\repositories\\recipecommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.dal\\repositories\\reciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|solutionrelative:recipefinderapp.dal\\repositories\\reciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.dal\\repositories\\ingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|solutionrelative:recipefinderapp.dal\\repositories\\ingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\entities\\recipecomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\entities\\recipecomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\repositories\\ireciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\repositories\\ireciperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\repositories\\ireciperatingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\repositories\\ireciperatingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\repositories\\irecipeingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\repositories\\irecipeingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\repositories\\irecipecommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\repositories\\irecipecommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\repositories\\iingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\repositories\\iingredientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\profiles\\userfavoriterecipeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\profiles\\userfavoriterecipeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\profiles\\reciperatingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\profiles\\reciperatingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\profiles\\recipeingredientprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\profiles\\recipeingredientprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\profiles\\recipecommentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\profiles\\recipecommentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\profiles\\ingredientprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\profiles\\ingredientprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\profiles\\recipeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\profiles\\recipeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipedtos\\recipecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipedtos\\recipecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipeingredientdtos\\recipeingredientgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipeingredientdtos\\recipeingredientgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipeingredientdtos\\recipeingredientupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipeingredientdtos\\recipeingredientupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipeingredientdtos\\recipeingredientcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipeingredientdtos\\recipeingredientcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\ingredientdtos\\ingredientupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\ingredientdtos\\ingredientupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\ingredientdtos\\ingredientcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\ingredientdtos\\ingredientcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\ingredientdtos\\ingredientgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\ingredientdtos\\ingredientgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\userfavoriterecipedtos\\userfavoriterecipeupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\userfavoriterecipedtos\\userfavoriterecipeupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\entities\\userfavoriterecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\entities\\userfavoriterecipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\userfavoriterecipedtos\\userfavoriterecipegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\userfavoriterecipedtos\\userfavoriterecipegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\userfavoriterecipedtos\\userfavoriterecipecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\userfavoriterecipedtos\\userfavoriterecipecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\userdtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +163,28 @@
       "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\userdtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\reciperatingdtos\\reciperatingcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\reciperatingdtos\\reciperatingcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\reciperatingdtos\\reciperatingupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\reciperatingdtos\\reciperatingupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\reciperatingdtos\\reciperatinggetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\reciperatingdtos\\reciperatinggetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\reciperatingdtos\\reciperatingcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\reciperatingdtos\\reciperatingcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipedtos\\recipeupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipedtos\\recipeupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipedtos\\recipegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipedtos\\recipegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipecommentdtos\\recipecommentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipecommentdtos\\recipecommentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipecommentdtos\\recipecommentgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,52 +195,16 @@
       "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipecommentdtos\\recipecommentcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipeingredientdtos\\recipeingredientcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipeingredientdtos\\recipeingredientcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipecommentdtos\\recipecommentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipecommentdtos\\recipecommentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipeingredientdtos\\recipeingredientgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipeingredientdtos\\recipeingredientgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipeingredientdtos\\recipeingredientupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipeingredientdtos\\recipeingredientupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\entities\\recipeingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\entities\\recipeingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\ingredientdtos\\ingredientgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\ingredientdtos\\ingredientgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\entities\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\entities\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\ingredientdtos\\ingredientupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\ingredientdtos\\ingredientupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\ingredientdtos\\ingredientcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\ingredientdtos\\ingredientcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipedtos\\getrecipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipedtos\\getrecipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipedtos\\updaterecipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipedtos\\updaterecipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.bl\\dtos\\recipedtos\\createrecipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F056AAB-4395-47E9-B8EE-E7E74C221EA6}|RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj|solutionrelative:recipefinderapp.bl\\dtos\\recipedtos\\createrecipedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\entities\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,16 +219,8 @@
       "RelativeMoniker": "D:0:0:{98E1C38B-CC73-4702-A30F-CB45A06A9868}|RecipeFinderApp.API\\RecipeFinderApp.API.csproj|solutionrelative:recipefinderapp.api\\recipefinderapp.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98E1C38B-CC73-4702-A30F-CB45A06A9868}|RecipeFinderApp.API\\RecipeFinderApp.API.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98E1C38B-CC73-4702-A30F-CB45A06A9868}|RecipeFinderApp.API\\RecipeFinderApp.API.csproj|solutionrelative:recipefinderapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\entities\\reciperating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\entities\\reciperating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.core\\entities\\recipecomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{723EB7D7-B827-4F7C-A9A7-DDC71F8FBFBF}|RecipeFinderApp.Core\\RecipeFinderApp.Core.csproj|solutionrelative:recipefinderapp.core\\entities\\recipecomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDCF5451-414A-4A84-BBDA-86C527E0C80E}|RecipeFinderApp.DAL\\RecipeFinderApp.DAL.csproj|c:\\users\\user\\desktop\\recipefinderapp\\recipefinderapp.api\\recipefinderapp.dal\\configurations\\recipeconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -174,102 +270,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserFavoriteRecipeGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeGetDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeGetDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeGetDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\ServiceRegistration.cs",
+              "RelativeToolTip": "RecipeFinderApp.DAL\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:40:17.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserFavoriteRecipeUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeUpdateDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeUpdateDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeUpdateDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:39:36.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserFavoriteRecipeCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeCreateDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeCreateDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeCreateDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:38:44.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserGetDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserGetDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserGetDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:36:18.278Z",
+              "WhenOpened": "2025-02-04T16:32:33.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserUpdateDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserUpdateDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserUpdateDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "IUserFavoriteRecipeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\IUserFavoriteRecipeRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Repositories\\IUserFavoriteRecipeRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\IUserFavoriteRecipeRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.DAL\\Repositories\\IUserFavoriteRecipeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:35:50.51Z",
+              "WhenOpened": "2025-02-04T15:41:28.549Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserCreateDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserCreateDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserCreateDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:35:19.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RecipeRatingUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingUpdateDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingUpdateDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingUpdateDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:30:12.112Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "UserFavoriteRecipe.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\UserFavoriteRecipe.cs",
               "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\UserFavoriteRecipe.cs",
@@ -282,280 +313,163 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RecipeRatingGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingGetDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingGetDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingGetDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "IUserFavoriteRecipeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IUserFavoriteRecipeRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Repositories\\IUserFavoriteRecipeRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IUserFavoriteRecipeRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Repositories\\IUserFavoriteRecipeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:31:10.811Z",
+              "WhenOpened": "2025-02-04T15:30:07.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RecipeCommentGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentGetDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentGetDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentGetDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AgIAAAoAAAAA6KI5mggTwBIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:28:22.767Z",
+              "WhenOpened": "2025-02-04T10:23:49.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RecipeRatingCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingCreateDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingCreateDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingCreateDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\Program.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.API\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\Program.cs",
+              "RelativeToolTip": "RecipeFinderApp.API\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:27:35.244Z",
+              "WhenOpened": "2025-02-03T12:05:22.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\User.cs",
-              "RelativeToolTip": "RecipeFinderApp.Core\\Entities\\User.cs",
-              "ViewState": "AgIAAAoAAADg6miahcovwBAAAABHAAAAAAAAAA==",
+              "Title": "RecipeRatingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\RecipeRatingRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Repositories\\RecipeRatingRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\RecipeRatingRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.DAL\\Repositories\\RecipeRatingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T11:38:10.804Z",
+              "WhenOpened": "2025-02-04T15:39:54.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RecipeIngredientGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientGetDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientGetDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientGetDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAHAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.DAL\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:22:47.251Z",
+              "WhenOpened": "2025-02-04T15:08:20.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RecipeIngredientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\RecipeIngredientRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Repositories\\RecipeIngredientRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\RecipeIngredientRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.DAL\\Repositories\\RecipeIngredientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T15:37:14.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RecipeCommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\RecipeCommentRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Repositories\\RecipeCommentRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\RecipeCommentRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.DAL\\Repositories\\RecipeCommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T15:36:03.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RecipeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\RecipeRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Repositories\\RecipeRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\RecipeRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.DAL\\Repositories\\RecipeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T15:35:13.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IngredientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\IngredientRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Repositories\\IngredientRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Repositories\\IngredientRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.DAL\\Repositories\\IngredientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T15:33:32.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "RecipeIngredientCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientCreateDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientCreateDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientCreateDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:16:40.823Z",
+              "WhenOpened": "2025-02-04T15:23:56.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "RecipeCommentUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentUpdateDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentUpdateDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentUpdateDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "IRecipeRatingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IRecipeRatingRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Repositories\\IRecipeRatingRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IRecipeRatingRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Repositories\\IRecipeRatingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:12:40.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RecipeCommentCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentCreateDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentCreateDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentCreateDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:08:44.898Z",
+              "WhenOpened": "2025-02-04T15:22:18.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "RecipeIngredientUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientUpdateDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientUpdateDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientUpdateDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Title": "IRecipeIngredientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IRecipeIngredientRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Repositories\\IRecipeIngredientRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IRecipeIngredientRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Repositories\\IRecipeIngredientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:21:57.024Z",
+              "WhenOpened": "2025-02-04T15:21:18.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IngredientGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientGetDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientGetDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientGetDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:05:33.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RecipeIngredient.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\RecipeIngredient.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\RecipeIngredient.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\RecipeIngredient.cs",
-              "RelativeToolTip": "RecipeFinderApp.Core\\Entities\\RecipeIngredient.cs",
-              "ViewState": "AgIAAAgAAAAArKOLyaAWwAwAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T11:59:27.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IngredientUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientUpdateDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientUpdateDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientUpdateDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:04:37.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IngredientCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientCreateDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientCreateDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientCreateDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T19:04:00.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "GetRecipeDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\GetRecipeDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\GetRecipeDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\GetRecipeDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\GetRecipeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T18:57:10.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UpdateRecipeDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\UpdateRecipeDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\UpdateRecipeDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\UpdateRecipeDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\UpdateRecipeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T18:02:17.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "CreateRecipeDto.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\CreateRecipeDto.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\CreateRecipeDto.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\CreateRecipeDto.cs",
-              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\CreateRecipeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T17:16:40.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Ingredient.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\Ingredient.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\Ingredient.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\Ingredient.cs",
-              "RelativeToolTip": "RecipeFinderApp.Core\\Entities\\Ingredient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T11:58:19.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "RecipeFinderApp.API.http",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\RecipeFinderApp.API.http",
-              "RelativeDocumentMoniker": "RecipeFinderApp.API\\RecipeFinderApp.API.http",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\RecipeFinderApp.API.http",
-              "RelativeToolTip": "RecipeFinderApp.API\\RecipeFinderApp.API.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-02-03T16:56:41.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "RecipeRating.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\RecipeRating.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\RecipeRating.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\RecipeRating.cs",
-              "RelativeToolTip": "RecipeFinderApp.Core\\Entities\\RecipeRating.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T12:34:14.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\appsettings.json",
-              "RelativeDocumentMoniker": "RecipeFinderApp.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\appsettings.json",
-              "RelativeToolTip": "RecipeFinderApp.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-03T12:02:10.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Recipe.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\Recipe.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\Recipe.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\Recipe.cs",
-              "RelativeToolTip": "RecipeFinderApp.Core\\Entities\\Recipe.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAuwAwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T11:39:50.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 12,
               "Title": "RecipeComment.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\RecipeComment.cs",
               "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\RecipeComment.cs",
@@ -568,20 +482,479 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\Program.cs",
-              "RelativeDocumentMoniker": "RecipeFinderApp.API\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\Program.cs",
-              "RelativeToolTip": "RecipeFinderApp.API\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA4AAABHAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "IRecipeCommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IRecipeCommentRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Repositories\\IRecipeCommentRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IRecipeCommentRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Repositories\\IRecipeCommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T12:05:22.745Z",
+              "WhenOpened": "2025-02-04T15:20:04.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IRecipeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IRecipeRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Repositories\\IRecipeRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IRecipeRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Repositories\\IRecipeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T15:19:28.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IIngredientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IIngredientRepository.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Repositories\\IIngredientRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Repositories\\IIngredientRepository.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Repositories\\IIngredientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T15:15:30.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\ServiceRegistration.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T08:54:12.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\UserProfile.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\Profiles\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\UserProfile.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\Profiles\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T08:45:42.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RecipeRatingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\RecipeRatingProfile.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\Profiles\\RecipeRatingProfile.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\RecipeRatingProfile.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\Profiles\\RecipeRatingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T08:44:17.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RecipeIngredientProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\RecipeIngredientProfile.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\Profiles\\RecipeIngredientProfile.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\RecipeIngredientProfile.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\Profiles\\RecipeIngredientProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T08:42:20.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RecipeCommentProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\RecipeCommentProfile.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\Profiles\\RecipeCommentProfile.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\RecipeCommentProfile.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\Profiles\\RecipeCommentProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T08:40:09.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IngredientProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\IngredientProfile.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\Profiles\\IngredientProfile.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\IngredientProfile.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\Profiles\\IngredientProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T08:37:40.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserFavoriteRecipeProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\UserFavoriteRecipeProfile.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\Profiles\\UserFavoriteRecipeProfile.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\UserFavoriteRecipeProfile.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\Profiles\\UserFavoriteRecipeProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T08:46:53.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RecipeProfile.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\RecipeProfile.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\Profiles\\RecipeProfile.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\Profiles\\RecipeProfile.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\Profiles\\RecipeProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T08:32:54.427Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 32,
+              "Title": "IngredientCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientCreateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientCreateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientCreateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:04:00.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IngredientUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientUpdateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientUpdateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientUpdateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:04:37.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RecipeIngredientGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientGetDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientGetDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientGetDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:22:47.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RecipeIngredientCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientCreateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientCreateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientCreateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:16:40.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RecipeCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\RecipeCreateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\RecipeCreateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\RecipeCreateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\RecipeCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T17:16:40.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IngredientGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientGetDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientGetDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientGetDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\IngredientDTOs\\IngredientGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:05:33.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "RecipeIngredientUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientUpdateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientUpdateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientUpdateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeIngredientDTOs\\RecipeIngredientUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:21:57.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UserFavoriteRecipeUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeUpdateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeUpdateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeUpdateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:39:36.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserFavoriteRecipeGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeGetDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeGetDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeGetDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:40:17.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserFavoriteRecipeCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeCreateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeCreateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeCreateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\UserFavoriteRecipeDTOs\\UserFavoriteRecipeCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:38:44.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UserUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserUpdateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserUpdateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserUpdateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:35:50.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "UserGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserGetDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserGetDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserGetDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:36:18.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserCreateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserCreateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserCreateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\UserDTOs\\UserCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:35:19.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "RecipeRatingUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingUpdateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingUpdateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingUpdateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:30:12.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RecipeRatingGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingGetDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingGetDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingGetDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:31:10.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "RecipeRatingCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingCreateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingCreateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingCreateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeRatingDTOs\\RecipeRatingCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:27:35.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "RecipeUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\RecipeUpdateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\RecipeUpdateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\RecipeUpdateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\RecipeUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T18:02:17.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RecipeGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\RecipeGetDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\RecipeGetDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\RecipeGetDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeDTOs\\RecipeGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T18:57:10.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RecipeCommentUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentUpdateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentUpdateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentUpdateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:12:40.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "RecipeCommentGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentGetDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentGetDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentGetDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:28:22.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "RecipeCommentCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentCreateDto.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentCreateDto.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentCreateDto.cs",
+              "RelativeToolTip": "RecipeFinderApp.BL\\DTOs\\RecipeCommentDtos\\RecipeCommentCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T19:08:44.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\User.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Entities\\User.cs",
+              "ViewState": "AgIAAAoAAABwdTTNQuU+wBAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T11:38:10.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "RecipeIngredient.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\RecipeIngredient.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\RecipeIngredient.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\RecipeIngredient.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Entities\\RecipeIngredient.cs",
+              "ViewState": "AgIAAAgAAAAArKOLyaAWwAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T11:59:27.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Ingredient.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\Ingredient.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\Ingredient.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\Ingredient.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Entities\\Ingredient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T11:58:19.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "RecipeFinderApp.API.http",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\RecipeFinderApp.API.http",
+              "RelativeDocumentMoniker": "RecipeFinderApp.API\\RecipeFinderApp.API.http",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\RecipeFinderApp.API.http",
+              "RelativeToolTip": "RecipeFinderApp.API\\RecipeFinderApp.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-02-03T16:56:41.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "RecipeRating.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\RecipeRating.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\RecipeRating.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\RecipeRating.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Entities\\RecipeRating.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwBAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T12:34:14.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\appsettings.json",
+              "RelativeDocumentMoniker": "RecipeFinderApp.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\appsettings.json",
+              "RelativeToolTip": "RecipeFinderApp.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-03T12:02:10.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\Recipe.cs",
+              "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\Recipe.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\Recipe.cs",
+              "RelativeToolTip": "RecipeFinderApp.Core\\Entities\\Recipe.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T11:39:50.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Configurations\\UserConfiguration.cs",
@@ -589,12 +962,11 @@
               "RelativeToolTip": "RecipeFinderApp.DAL\\Configurations\\UserConfiguration.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAkwB0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T15:07:21.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T15:07:21.518Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 57,
               "Title": "UserFavoriteRecipeConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Configurations\\UserFavoriteRecipeConfiguration.cs",
               "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Configurations\\UserFavoriteRecipeConfiguration.cs",
@@ -602,12 +974,11 @@
               "RelativeToolTip": "RecipeFinderApp.DAL\\Configurations\\UserFavoriteRecipeConfiguration.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAYwBMAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T16:21:04.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T16:21:04.89Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 55,
               "Title": "RecipeConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Configurations\\RecipeConfiguration.cs",
               "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Configurations\\RecipeConfiguration.cs",
@@ -615,25 +986,23 @@
               "RelativeToolTip": "RecipeFinderApp.DAL\\Configurations\\RecipeConfiguration.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAkwCEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:03:33.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T14:03:33.755Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 58,
               "Title": "RecipeFinderDbContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Context\\RecipeFinderDbContext.cs",
               "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Context\\RecipeFinderDbContext.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Context\\RecipeFinderDbContext.cs",
               "RelativeToolTip": "RecipeFinderApp.DAL\\Context\\RecipeFinderDbContext.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABYAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAIBJwBYAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T12:06:38.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T12:06:38.172Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 59,
               "Title": "RecipeRatingConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Configurations\\RecipeRatingConfiguration.cs",
               "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Configurations\\RecipeRatingConfiguration.cs",
@@ -641,12 +1010,11 @@
               "RelativeToolTip": "RecipeFinderApp.DAL\\Configurations\\RecipeRatingConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:56:09.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T14:56:09.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 60,
               "Title": "RecipeIngredientConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Configurations\\RecipeIngredientConfiguration.cs",
               "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Configurations\\RecipeIngredientConfiguration.cs",
@@ -654,12 +1022,11 @@
               "RelativeToolTip": "RecipeFinderApp.DAL\\Configurations\\RecipeIngredientConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T15:00:26.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T15:00:26.492Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 61,
               "Title": "RecipeCommentConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Configurations\\RecipeCommentConfiguration.cs",
               "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Configurations\\RecipeCommentConfiguration.cs",
@@ -667,12 +1034,11 @@
               "RelativeToolTip": "RecipeFinderApp.DAL\\Configurations\\RecipeCommentConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:45:08.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T14:45:08.33Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 62,
               "Title": "IngredientConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.DAL\\Configurations\\IngredientConfiguration.cs",
               "RelativeDocumentMoniker": "RecipeFinderApp.DAL\\Configurations\\IngredientConfiguration.cs",
@@ -680,12 +1046,11 @@
               "RelativeToolTip": "RecipeFinderApp.DAL\\Configurations\\IngredientConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T14:39:05.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T14:39:05.814Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 63,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Entities\\Common\\BaseEntity.cs",
               "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Entities\\Common\\BaseEntity.cs",
@@ -693,12 +1058,11 @@
               "RelativeToolTip": "RecipeFinderApp.Core\\Entities\\Common\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T11:32:09.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T11:32:09.498Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 64,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.Core\\Enums\\Roles.cs",
               "RelativeDocumentMoniker": "RecipeFinderApp.Core\\Enums\\Roles.cs",
@@ -706,8 +1070,7 @@
               "RelativeToolTip": "RecipeFinderApp.Core\\Enums\\Roles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T11:36:15.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-03T11:36:15.677Z"
             }
           ]
         }

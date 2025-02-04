@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RecipeFinderApp.BL.DTOs.RecipeDTOs
 {
-    public class CreateRecipeDto
+    public class RecipeCreateDto
     {
         public string Title { get; set; }
         public string Instruction { get; set; }
