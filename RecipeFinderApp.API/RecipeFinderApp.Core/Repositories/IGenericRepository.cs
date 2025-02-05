@@ -10,20 +10,24 @@ namespace RecipeFinderApp.Core.Repositories
 {
     public interface IGenericRepository<T> where T : BaseEntity, new()
     {
-        Task<List<U>> GetAllAsync<U>(Expression<Func<T, U>> select);
-        Task<List<T>> GetAllAsync(Expression<Func<T,T>> select);
-        Task<List<U>> GetWhereAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select);
-        Task<List<T>> GetWhereAsync(Expression<Func<T, bool>> expression, Expression<Func<T, T>> select);
-        Task<U?> GetByIdAsync<U>(int id, Expression<Func<T, U>> select);
-        Task<T?> GetByIdAsync(int id, Expression<Func<T, T>> select);
-        Task<U?> GetByExpressionAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select);
-        Task<T?> GetByExpressionAsync(Expression<Func<T, bool>> expression, Expression<Func<T, T>> select);
-        Task<bool> IsExistAsync(Guid id);
+        Task AddAsync(T entity);
+        void Delete(T  entity);
+        Task DeleteAndSaveAsync(int id);
+        Task DeleteAsync(int id);
+        Task<IEnumerable<U>> GetAllAsync<U>(Expression<Func<T, U>> select,bool getAll = false, bool asNoTrack = true,bool isDeleted = true);
+        Task<IEnumerable<U>> GetAllAsync<U>(Expression<Func<T,U>> select, bool isDeleted = true);
+        Task<U?> GetByIdAsync<U>(int id, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = true);
+        Task<T?> GetByIdAsync(int id, bool asNoTrack = true, bool isDeleted = true);
+        Task<U?> GetFirstAsync<U>(int id, Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = true);
+        Task<IEnumerable<U>> GetWhereAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = true);
+       
+        Task<bool> IsExistAsync(int id);
         Task<bool> IsExistAsync(Expression<Func<T, bool>> expression);
-        Task AddAsync(T model);
-        Task RemoveAsync(Guid id);
-        void Remove(T  model);
-        Task<int> GetAllCountAsync();
-        Task SaveAsync();
+        void ReverseSoftDelete(T entity);
+        Task ReverseSoftDeleteAsync(int id);
+        Task<int> SaveAsync();
+        void SoftDelete(T entity);
+        Task SoftDeleteAsync(int id);
+        
     }
 }

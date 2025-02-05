@@ -15,80 +15,116 @@ public class GenericRepository<T>(RecipeFinderDbContext _context) : IGenericRepo
 {
     protected DbSet<T> Table => _context.Set<T>();
 
-    public async Task AddAsync(T model)
-        => await Table.AddAsync(model);
-
-    public async Task<List<U>> GetAllAsync<U>(Expression<Func<T, U>> select)
+    public async Task AddAsync(T entity)
     {
-        var models = await Table.Select(select).ToListAsync();
-        return models;
+        await Table.AddAsync(entity);
     }
 
-    public async Task<List<T>> GetAllAsync(Expression<Func<T, T>> select)
+    public void Delete(T entity)
     {
-        var models = await Table.Select(select).ToListAsync();
-        return models;
+        Table.Remove(entity);
     }
 
-    public async Task<int> GetAllCountAsync()
-        => await Table.CountAsync();
-
-    public async Task<U?> GetByExpressionAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select)
+    public async Task DeleteAndSaveAsync(int id)
     {
-        var query = Table.Where(expression).Select(select);
-        var model = await query.FirstOrDefaultAsync();
-        return model;
+        await Table.Where(x => x.Id == id).ExecuteDeleteAsync();
     }
 
-    public async Task<T?> GetByExpressionAsync(Expression<Func<T, bool>> expression, Expression<Func<T, T>> select)
+    public async Task DeleteAsync(int id)
     {
-        var query = Table.Where(expression).Select(select);
-        var model = await query.FirstOrDefaultAsync();
-        return model;
+        var entity = await Table.FindAsync(id);
+        Table.Remove(entity!);
     }
 
-    public async Task<U?> GetByIdAsync<U>(int id, Expression<Func<T, U>> select)
-        => await GetByExpressionAsync(x => x.Id == id, select);
-
-    public async Task<T?> GetByIdAsync(int id, Expression<Func<T, T>> select)
-        => await GetByExpressionAsync(x => x.Id == id, select);
-    public async Task<List<U>> GetWhereAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select)
+    public async Task<IEnumerable<U>> GetAllAsync<U>(Expression<Func<T, U>> select, bool getAll = false, bool asNoTrack = true, bool isDeleted = true)
     {
-        var query = Table.Where(expression).Select(select);
-        var models = await query.ToListAsync();
-        return models;
+        IQueryable<T> query = Table;
+        if(!getAll)
+        {
+            query = query.Where(x => x.IsDeleted != isDeleted);
+        }
+        if (asNoTrack)
+        {
+            query = query.AsNoTracking();
+        }
+        return await query.Select(select).ToListAsync();
     }
 
-    public async Task<List<T>> GetWhereAsync(Expression<Func<T, bool>> expression, Expression<Func<T, T>> select)
+    public async Task<IEnumerable<U>> GetAllAsync<U>(Expression<Func<T, U>> select, bool isDeleted = true)
     {
-        var query = Table.Where(expression).Select(select);
-        var models = await query.ToListAsync();
-        return models;
+        IQueryable<T> query = Table.Where(x => x.IsDeleted != isDeleted);
+        return await query.Select(select).ToListAsync();
     }
 
-    public async Task<bool> IsExistAsync(Guid id)
+    public async Task<U?> GetByIdAsync<U>(int id, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = true)
     {
-        var model = await Table.FindAsync(id);
-        if(model == null) return false;
-        return true;
+        IQueryable<T> query = Table.Where(x => x.Id == id && x.IsDeleted != isDeleted);
+        if(asNoTrack)
+        {
+            query = query.AsNoTracking();
+        }
+        return await query.Select(select).FirstOrDefaultAsync();
     }
+
+
+    public async Task<T?> GetByIdAsync(int id, bool asNoTrack = true, bool isDeleted = true)
+    {
+        IQueryable<T> query = Table.Where(x => x.Id == id && x.IsDeleted != isDeleted);
+
+        if (asNoTrack)
+        {
+            query = query.AsNoTracking();
+        }
+
+        return await query.FirstOrDefaultAsync();
+    }
+
+    public async Task<U?> GetFirstAsync<U>(int id, Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = true)
+    {
+        IQueryable<T> query = Table.Where(expression).Where(x => x.IsDeleted != isDeleted);
+        if (asNoTrack)
+        {
+            query = query.AsNoTracking();
+        }
+        return await query.Select(select).FirstOrDefaultAsync();
+    }
+
+    public async Task<IEnumerable<U>> GetWhereAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = true)
+    {
+        IQueryable<T> query = Table.Where(expression).Where(x => x.IsDeleted != isDeleted);
+        if (asNoTrack)
+        {
+            query = query.AsNoTracking();
+        }
+        return await query.Select(select).ToListAsync();
+    }
+
+    public async Task<bool> IsExistAsync(int id)
+        => await Table.AnyAsync(x => x.Id == id);
 
     public async Task<bool> IsExistAsync(Expression<Func<T, bool>> expression)
+        => await Table.AnyAsync(expression);
+
+    public void ReverseSoftDelete(T entity)
     {
-        var model = await Table.FirstOrDefaultAsync(expression);
-        if (model == null) return false;
-        return true;
+        entity.IsDeleted = false;
     }
 
-    public void Remove(T model)
-        => Table.Remove(model);
-
-    public async Task RemoveAsync(Guid id)
+    public async Task ReverseSoftDeleteAsync(int id)
     {
-        var model = await Table.FindAsync(id);
-        Table.Remove(model!);
+        var entity = await Table.FindAsync(id);
+        entity!.IsDeleted = false;
     }
 
-    public async Task SaveAsync()
+    public async Task<int> SaveAsync()
         => await _context.SaveChangesAsync();
+
+    public void SoftDelete(T entity)
+        => entity.IsDeleted = true;
+
+    public async Task SoftDeleteAsync(int id)
+    {
+        var entity = await Table.FindAsync(id);
+        entity!.IsDeleted = true;
+    }
 }

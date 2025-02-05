@@ -12,7 +12,7 @@ namespace RecipeFinderApp.BL.DTOs.RecipeDTOs
         public int Id { get; set; }
         public string Title { get; set; }
         public string Instruction { get; set; }
-        public IFormFile? ImageFile { get; set; } 
+        public IFormFile? ImageUrl { get; set; } 
         public DateTime? PreparationTime { get; set; } 
         public List<int>? IngredientIds { get; set; }
     }

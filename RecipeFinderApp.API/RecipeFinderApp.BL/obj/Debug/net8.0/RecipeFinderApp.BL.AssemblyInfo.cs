@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecipeFinderApp.BL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84f46aa0ced923ee5063c8de5af593c9778a6397")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16eb52e9771d3815e8827ba7ef2ad6d8ee001a12")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecipeFinderApp.BL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecipeFinderApp.BL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -15,3 +15,4 @@ C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\ob
 C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\RecipeFinderApp.DAL.pdb
 C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\RecipeFinderApp.DAL.genruntimeconfig.cache
 C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\ref\RecipeFinderApp.DAL.dll
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.DAL\obj\Debug\net8.0\RecipeFinderApp.DAL.sourcelink.json

@@ -10,3 +10,4 @@ C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\o
 C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\refint\RecipeFinderApp.Core.dll
 C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\RecipeFinderApp.Core.pdb
 C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\ref\RecipeFinderApp.Core.dll
+C:\Users\User\Desktop\RecipeFinderApp\RecipeFinderApp.API\RecipeFinderApp.Core\obj\Debug\net8.0\RecipeFinderApp.Core.sourcelink.json
