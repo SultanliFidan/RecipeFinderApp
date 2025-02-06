@@ -14,7 +14,7 @@ namespace RecipeFinderApp.BL.Profiles
         public RecipeCommentProfile()
         {
             CreateMap<RecipeCommentCreateDto, RecipeComment>();
-            CreateMap<RecipeCommentUpdateDto, RecipeComment>();
+           
             CreateMap<RecipeComment, RecipeCommentGetDto>();
         }
     }

@@ -1,5 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
+using RecipeFinderApp.BL;
 using RecipeFinderApp.DAL;
 using RecipeFinderApp.DAL.Context;
 
@@ -18,6 +19,9 @@ namespace RecipeFinderApp.API
 
             builder.Services.AddAutoMapper(typeof(Program));
             builder.Services.AddRepositories();
+            builder.Services.AddJwtOptions(builder.Configuration);
+            builder.Services.AddFluentValidation();
+            builder.Services.AddServices();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

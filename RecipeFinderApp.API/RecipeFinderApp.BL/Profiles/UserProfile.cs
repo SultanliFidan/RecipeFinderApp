@@ -13,8 +13,7 @@ namespace RecipeFinderApp.BL.Profiles
     {
         public UserProfile()
         {
-            CreateMap<UserCreateDto, User>();
-            CreateMap<UserUpdateDto, User>();
+           
             CreateMap<User, UserGetDto>();
         }
     }

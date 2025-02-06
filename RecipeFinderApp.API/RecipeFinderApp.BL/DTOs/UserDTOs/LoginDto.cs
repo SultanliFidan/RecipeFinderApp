@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace RecipeFinderApp.BL.DTOs.UserDTOs
 {
-    public class UserUpdateDto
+    public class LoginDto
     {
-        public int Id {  get; set; }
-        public string Fullname { get; set; }
-        public string? ProfileImageUrl { get; set; }
+        public string UsernameOrEmail { get; set; }
+        public string Password { get; set; }
+        public bool RememberMe { get; set; }
     }
 }
