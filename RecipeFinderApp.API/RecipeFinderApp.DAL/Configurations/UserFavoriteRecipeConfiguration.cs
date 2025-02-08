@@ -15,10 +15,10 @@ namespace RecipeFinderApp.DAL.Configurations
         {
             builder.HasOne(x => x.User)
                 .WithMany(u => u.UserFavoriteRecipes)
-                .HasForeignKey(i => i.UserId);
+                .HasForeignKey(i => i.UserId).OnDelete(DeleteBehavior.NoAction);
             builder.HasOne(x => x.Recipe)
                 .WithMany(u => u.UserFavoriteRecipes)
-                .HasForeignKey(i => i.RecipeId);
+                .HasForeignKey(i => i.RecipeId).OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

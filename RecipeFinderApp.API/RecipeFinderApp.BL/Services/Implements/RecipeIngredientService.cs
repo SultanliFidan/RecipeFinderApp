@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using RecipeFinderApp.BL.DTOs.RecipeIngredientDTOs;
+using RecipeFinderApp.BL.Exceptioins.Common;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Entities;
 using RecipeFinderApp.Core.Repositories;
@@ -24,7 +25,7 @@ namespace RecipeFinderApp.BL.Services.Implements
         {
             RecipeIngredient? recipeIngredient = await _recipeIngredientRepository.GetByIdAsync(id, false);
             if (recipeIngredient == null)
-                throw new Exception();
+                throw new NotFoundException<RecipeIngredient>();
             await _recipeIngredientRepository.DeleteAndSaveAsync(id);
         }
 
@@ -56,7 +57,7 @@ namespace RecipeFinderApp.BL.Services.Implements
         {
             RecipeIngredient? recipeIngredient = await _recipeIngredientRepository.GetByIdAsync(id,false);
             if (recipeIngredient == null)
-                throw new Exception();
+                throw new NotFoundException<RecipeIngredient>();
             _mapper.Map(dto, recipeIngredient);
             await _recipeIngredientRepository.SaveAsync();
         }

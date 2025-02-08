@@ -11,9 +11,6 @@ namespace RecipeFinderApp.DAL.Context
 {
     public class RecipeFinderDbContext : IdentityDbContext<User>
     {
-        public RecipeFinderDbContext(DbContextOptions opt) : base(opt)
-        {
-        }
 
         public DbSet<Recipe> Recipes { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }
@@ -21,6 +18,11 @@ namespace RecipeFinderApp.DAL.Context
         public DbSet<RecipeComment> RecipeComments { get; set; }
         public DbSet<RecipeRating> RecipeRatings { get; set; }
         public DbSet<UserFavoriteRecipe> UserFavoriteRecipes { get; set; }
+
+        public RecipeFinderDbContext(DbContextOptions opt) : base(opt)
+        {
+        }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -18,10 +18,10 @@ namespace RecipeFinderApp.DAL.Configurations
                 .HasMaxLength(128);
             builder.HasOne(x => x.Ingredient)
                 .WithMany(r => r.RecipeIngredients)
-                .HasForeignKey(i => i.IngredientId);
+                .HasForeignKey(i => i.IngredientId).OnDelete(DeleteBehavior.NoAction);
             builder.HasOne(x => x.Recipe)
                 .WithMany(r => r.RecipeIngredients)
-                .HasForeignKey(i => i.RecipeId);
+                .HasForeignKey(i => i.RecipeId).OnDelete(DeleteBehavior.NoAction);
 
         }
     }

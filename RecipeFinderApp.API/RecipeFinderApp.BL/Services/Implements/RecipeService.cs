@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using RecipeFinderApp.BL.DTOs.RecipeDTOs;
+using RecipeFinderApp.BL.Exceptioins.Common;
 using RecipeFinderApp.BL.Extensions;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Entities;
@@ -85,7 +86,7 @@ namespace RecipeFinderApp.BL.Services.Implements
         public async Task RestoreRecipe(int id)
         {
             var recipe = await _recipeRepository.GetByIdAsync(id, false);
-            if (recipe == null) throw new Exception("Recipe not found");
+            if (recipe == null) throw new NotFoundException<Recipe>();
 
             if (!recipe.IsDeleted)
                 throw new Exception("Recipe is not deleted");
@@ -97,7 +98,7 @@ namespace RecipeFinderApp.BL.Services.Implements
         public async Task SoftDeleteRecipe(int id)
         {
             var recipe = await _recipeRepository.GetByIdAsync(id, false);
-            if (recipe == null) throw new Exception("Recipe not found");
+            if (recipe == null) throw new NotFoundException<Recipe>();
 
             recipe.IsDeleted = true; 
             await _recipeRepository.SaveAsync();
@@ -106,7 +107,7 @@ namespace RecipeFinderApp.BL.Services.Implements
         public async Task UpdateRecipe(int id,RecipeUpdateDto dto, string uploadPath)
         {
             var recipe = await _recipeRepository.GetByIdAsync(id, false);
-            if (recipe == null) throw new Exception("Recipe not found");
+            if (recipe == null) throw new NotFoundException<Recipe>();
 
             _mapper.Map(dto, recipe);
 

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using RecipeFinderApp.BL.DTOs.UserFavoriteRecipeDTOs;
+using RecipeFinderApp.BL.Exceptioins.Common;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Entities;
 using RecipeFinderApp.Core.Repositories;
@@ -24,7 +25,7 @@ namespace RecipeFinderApp.BL.Services.Implements
         {
             UserFavoriteRecipe? favorite = await _favoriteRepository.GetByIdAsync(id,false);
             if (favorite == null)
-                throw new Exception("Favorite recipe not found");
+                throw new NotFoundException<UserFavoriteRecipe>();
             await _favoriteRepository.DeleteAndSaveAsync(id);
         }
 
