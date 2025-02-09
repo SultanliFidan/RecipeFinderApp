@@ -8,7 +8,7 @@ namespace RecipeFinderApp.BL.DTOs.IngredientDTOs
 {
     public class IngredientUpdateDto
     {
-        public int Id { get; set; }
+       
         public string Name { get; set; }
     }
 }

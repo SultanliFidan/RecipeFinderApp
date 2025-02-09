@@ -19,7 +19,7 @@ public class GenericRepository<T>(RecipeFinderDbContext _context) : IGenericRepo
     {
         await Table.AddAsync(entity);
     }
-
+   
     public void Delete(T entity)
     {
         Table.Remove(entity);

@@ -18,9 +18,9 @@ namespace RecipeFinderApp.BL.Services.Implements
         public async Task CreateRecipe(RecipeCreateDto dto, string uploadPath)
         {
             Recipe recipe = _mapper.Map<Recipe>(dto);
-            if (dto.ImageUrl != null && dto.ImageUrl.isValidType("image") && dto.ImageUrl.isValidSize(400))
+            if (dto.File != null && dto.File.isValidType("image") && dto.File.isValidSize(400))
             {
-                string fileName = await dto.ImageUrl.UploadAsync(uploadPath);
+                string fileName = await dto.File.UploadAsync(uploadPath);
                 recipe.ImageUrl = Path.Combine("wwwroot","recipes",fileName);
             } 
 
@@ -85,7 +85,7 @@ namespace RecipeFinderApp.BL.Services.Implements
 
         public async Task RestoreRecipe(int id)
         {
-            var recipe = await _recipeRepository.GetByIdAsync(id, false);
+            var recipe = await _recipeRepository.GetByIdAsync(id, true);
             if (recipe == null) throw new NotFoundException<Recipe>();
 
             if (!recipe.IsDeleted)

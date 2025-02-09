@@ -4,6 +4,8 @@ using RecipeFinderApp.BL.Services.Abstractions;
 
 namespace RecipeFinderApp.API.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class RecipeIngredientController(IRecipeIngredientService _recipeIngredientService) : ControllerBase
     {
         [HttpPost]

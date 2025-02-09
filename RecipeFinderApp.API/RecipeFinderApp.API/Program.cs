@@ -16,13 +16,34 @@ namespace RecipeFinderApp.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-
             builder.Services.AddControllers();
-
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen(options =>
+            {
+                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+                {
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "Bearer"
+                });
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+            });
             builder.Services.AddDbContext<RecipeFinderDbContext>(opt =>
             {
-
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("MSSql"));
             });
 
@@ -38,44 +59,13 @@ namespace RecipeFinderApp.API
                 opt.Lockout.MaxFailedAccessAttempts = 3;
                 opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
             }).AddDefaultTokenProviders().AddEntityFrameworkStores<RecipeFinderDbContext>();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen(options =>
-            {
-                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
-                {
-                    Name = "Authorization",
-                    In = ParameterLocation.Header,
-                    Type = SecuritySchemeType.Http,
-                    Scheme = "Bearer"
-                });
-
-                options.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            Array.Empty<string>()
-        }
-    });
-            }
-
-                );
-
-
 
             builder.Services.AddAuth(builder.Configuration);
             builder.Services.AddJwtOptions(builder.Configuration);
+            builder.Services.AddRepositories();
             builder.Services.AddServices();
             builder.Services.AddFluentValidation();
-            builder.Services.AddAutoMapper(typeof(Program));
-            builder.Services.AddRepositories();
+            builder.Services.AddAutoMapper();
 
             var app = builder.Build();
 
@@ -86,12 +76,9 @@ namespace RecipeFinderApp.API
                 app.UseSwaggerUI();
             }
 
-            app.UseAuthentication();
-            app.UseAuthorization();
+            app.UseHttpsRedirection();
             app.UseUserSeed();
-
             app.MapControllers();
-
             app.Run();
         }
     }

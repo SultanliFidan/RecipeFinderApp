@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\0ks0lnso.blf.jpg",
+      "PackagePath": "staticwebassets\\0ks0lnso.blf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\h0t2ugzc.d3j.jpg",
+      "PackagePath": "staticwebassets\\h0t2ugzc.d3j.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\le54hteq.4be.jpg",
+      "PackagePath": "staticwebassets\\le54hteq.4be.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\sfapwfzo.qrm.jpg",
+      "PackagePath": "staticwebassets\\sfapwfzo.qrm.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\yimtcn1p.ajp.jpg",
+      "PackagePath": "staticwebassets\\yimtcn1p.ajp.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RecipeFinderApp.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RecipeFinderApp.API.props",
+      "PackagePath": "build\\RecipeFinderApp.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RecipeFinderApp.API.props",
+      "PackagePath": "buildMultiTargeting\\RecipeFinderApp.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RecipeFinderApp.API.props",
+      "PackagePath": "buildTransitive\\RecipeFinderApp.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

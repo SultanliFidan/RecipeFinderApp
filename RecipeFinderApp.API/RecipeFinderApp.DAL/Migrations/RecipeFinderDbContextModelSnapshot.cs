@@ -511,13 +511,13 @@ namespace RecipeFinderApp.DAL.Migrations
                     b.HasOne("RecipeFinderApp.Core.Entities.Ingredient", "Ingredient")
                         .WithMany("RecipeIngredients")
                         .HasForeignKey("IngredientId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("RecipeFinderApp.Core.Entities.Recipe", "Recipe")
                         .WithMany("RecipeIngredients")
                         .HasForeignKey("RecipeId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Ingredient");
@@ -545,13 +545,13 @@ namespace RecipeFinderApp.DAL.Migrations
                     b.HasOne("RecipeFinderApp.Core.Entities.Recipe", "Recipe")
                         .WithMany("UserFavoriteRecipes")
                         .HasForeignKey("RecipeId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("RecipeFinderApp.Core.Entities.User", "User")
                         .WithMany("UserFavoriteRecipes")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Recipe");

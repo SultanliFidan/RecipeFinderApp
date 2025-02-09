@@ -44,7 +44,7 @@ namespace RecipeFinderApp.API.Controllers
         {
            
             await _ingredientService.DeleteIngredient(id);
-            return Ok(new { Message = "Ingredient deleted successfully" });
+            return Ok();
         }
     }
 }

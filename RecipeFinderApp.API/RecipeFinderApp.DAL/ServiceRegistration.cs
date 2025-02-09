@@ -13,6 +13,8 @@ namespace RecipeFinderApp.DAL
     {
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
+
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IIngredientRepository, IngredientRepository>();
             services.AddScoped<IRecipeCommentRepository, RecipeCommentRepository>();
             services.AddScoped<IRecipeIngredientRepository, RecipeIngredientRepository>();

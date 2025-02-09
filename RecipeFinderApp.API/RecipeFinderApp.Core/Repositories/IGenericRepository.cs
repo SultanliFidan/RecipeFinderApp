@@ -11,6 +11,7 @@ namespace RecipeFinderApp.Core.Repositories
     public interface IGenericRepository<T> where T : BaseEntity, new()
     {
         Task AddAsync(T entity);
+        
         void Delete(T  entity);
         Task DeleteAndSaveAsync(int id);
         Task DeleteAsync(int id);

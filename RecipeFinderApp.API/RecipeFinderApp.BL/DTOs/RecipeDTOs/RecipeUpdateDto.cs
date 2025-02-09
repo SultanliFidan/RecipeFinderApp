@@ -9,7 +9,7 @@ namespace RecipeFinderApp.BL.DTOs.RecipeDTOs
 {
     public class RecipeUpdateDto
     {
-        public int Id { get; set; }
+        
         public string Title { get; set; }
         public string Instruction { get; set; }
         public IFormFile? ImageUrl { get; set; } 

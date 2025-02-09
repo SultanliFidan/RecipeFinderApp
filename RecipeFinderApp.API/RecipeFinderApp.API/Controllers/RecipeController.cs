@@ -46,14 +46,14 @@ namespace RecipeFinderApp.API.Controllers
             return Ok("Recipe deleted successfully");
         }
 
-        [HttpPatch("soft-delete/{id}")]
+        [HttpDelete("soft-delete/{id}")]
         public async Task<IActionResult> SoftDelete(int id)
         {
             await _recipeService.SoftDeleteRecipe(id);
             return Ok("Recipe soft deleted successfully" );
         }
 
-        [HttpPatch("restore/{id}")]
+        [HttpPut("restore/{id}")]
         public async Task<IActionResult> Restore(int id)
         {
             await _recipeService.RestoreRecipe(id);

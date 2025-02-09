@@ -24,7 +24,7 @@ namespace RecipeFinderApp.BL.Validators.RecipesValidators
                 .WithMessage("Title cannot be empty")
                 .MaximumLength(255)
                 .WithMessage("Title should be less than 255");
-            RuleFor(x => x.ImageUrl)
+            RuleFor(x => x.File)
                 .NotNull()
                 .NotEmpty()
                 .WithMessage("Image cannot be empty")
