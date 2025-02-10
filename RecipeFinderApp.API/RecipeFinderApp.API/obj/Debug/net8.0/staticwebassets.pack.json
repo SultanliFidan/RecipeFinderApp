@@ -1,8 +1,20 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\0f0krc4a.deq.jpg",
+      "PackagePath": "staticwebassets\\0f0krc4a.deq.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\0ks0lnso.blf.jpg",
       "PackagePath": "staticwebassets\\0ks0lnso.blf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\aqcudwrn.5q2.jpg",
+      "PackagePath": "staticwebassets\\aqcudwrn.5q2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\d04bufkk.ed2.jpg",
+      "PackagePath": "staticwebassets\\d04bufkk.ed2.jpg"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\h0t2ugzc.d3j.jpg",
@@ -17,8 +29,16 @@
       "PackagePath": "staticwebassets\\sfapwfzo.qrm.jpg"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\uiw3k0at.gis.jpg",
+      "PackagePath": "staticwebassets\\uiw3k0at.gis.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\yimtcn1p.ajp.jpg",
       "PackagePath": "staticwebassets\\yimtcn1p.ajp.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\yzetu0rx.mzl.jpg",
+      "PackagePath": "staticwebassets\\yzetu0rx.mzl.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RecipeFinderApp.API.Microsoft.AspNetCore.StaticWebAssets.props",

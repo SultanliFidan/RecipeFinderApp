@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "RecipeFinderApp.API.Controllers.AccountController",
+    "Method": "SendMail",
+    "RelativePath": "api/Account/SendMail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecipeFinderApp.API.Controllers.AccountController",
+    "Method": "Verify",
+    "RelativePath": "api/Account/Verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RecipeFinderApp.API.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/Login",

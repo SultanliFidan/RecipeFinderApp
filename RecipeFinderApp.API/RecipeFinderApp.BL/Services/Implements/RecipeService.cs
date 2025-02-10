@@ -5,6 +5,7 @@ using RecipeFinderApp.BL.Extensions;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Entities;
 using RecipeFinderApp.Core.Repositories;
+using RecipeFinderApp.DAL.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,24 +31,25 @@ namespace RecipeFinderApp.BL.Services.Implements
 
         public async Task DeleteRecipe(int id)
         {
+           
             await _recipeRepository.DeleteAndSaveAsync(id);
         }
 
         public async Task<IEnumerable<RecipeGetDto>> GetAllRecipe()
         {
             var recipes = await _recipeRepository.GetAllAsync(x => new RecipeGetDto
-        {
-            Id = x.Id,
-            Title = x.Title,
-            Instruction = x.Instruction,
-            ImageUrl = x.ImageUrl,
-            PreparationTime = x.PreparationTime,
-            UserId = x.UserId,
-            Ingredients = x.RecipeIngredients.Select(x => x.Ingredient.Name).ToList()
-        },
-        isDeleted: false);
+            {
+                Id = x.Id,
+                Title = x.Title,
+                Instruction = x.Instruction,
+                ImageUrl = x.ImageUrl,
+                PreparationTime = x.PreparationTime,
+                UserId = x.UserId,
+                Ingredients = x.RecipeIngredients.Select(x => x.Ingredient.Name).ToList()
+            }, false);
 
             return recipes;
+
         }
 
         public async Task<IEnumerable<RecipeGetDto>> GetAllDeletedRecipe()
@@ -78,20 +80,14 @@ namespace RecipeFinderApp.BL.Services.Implements
                 PreparationTime = x.PreparationTime,
                 UserId = x.UserId,
                 Ingredients = x.RecipeIngredients.Select(x => x.Ingredient.Name).ToList()
-            });
+            }, false);
 
             return recipe;
         }
 
         public async Task RestoreRecipe(int id)
         {
-            var recipe = await _recipeRepository.GetByIdAsync(id, true);
-            if (recipe == null) throw new NotFoundException<Recipe>();
-
-            if (!recipe.IsDeleted)
-                throw new Exception("Recipe is not deleted");
-
-            recipe.IsDeleted = false; 
+            await _recipeRepository.ReverseSoftDeleteAsync(id);
             await _recipeRepository.SaveAsync();
         }
 

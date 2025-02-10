@@ -1,8 +1,10 @@
 
+using Microsoft.AspNetCore.Builder.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using RecipeFinderApp.BL;
+using RecipeFinderApp.BL.DTOs.Options;
 using RecipeFinderApp.BL.Extensions;
 using RecipeFinderApp.Core.Entities;
 using RecipeFinderApp.DAL;
@@ -62,10 +64,14 @@ namespace RecipeFinderApp.API
 
             builder.Services.AddAuth(builder.Configuration);
             builder.Services.AddJwtOptions(builder.Configuration);
+            builder.Services.AddEmailOptions(builder.Configuration);
             builder.Services.AddRepositories();
             builder.Services.AddServices();
             builder.Services.AddFluentValidation();
             builder.Services.AddAutoMapper();
+
+            
+
 
             var app = builder.Build();
 
@@ -75,9 +81,11 @@ namespace RecipeFinderApp.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            
             app.UseHttpsRedirection();
             app.UseUserSeed();
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.MapControllers();
             app.Run();
         }

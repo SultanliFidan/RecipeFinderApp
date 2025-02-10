@@ -18,6 +18,7 @@ namespace RecipeFinderApp.BL
 
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
+            services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<IRecipeService, RecipeService>();
             services.AddScoped<IIngredientService, IngredientService>();
             services.AddScoped<IAuthService, AuthService>();
@@ -25,6 +26,7 @@ namespace RecipeFinderApp.BL
             services.AddScoped<IRecipeCommentService, RecipeCommentService>();
             services.AddScoped<IJwtTokenHandler, JwtTokenHandler>();
             services.AddScoped<IRecipeRatingService, RecipeRatingService>();
+            services.AddScoped<IUserFavoriteRecipeService, UserFavoriteRecipeService>();
 
             return services;
         }

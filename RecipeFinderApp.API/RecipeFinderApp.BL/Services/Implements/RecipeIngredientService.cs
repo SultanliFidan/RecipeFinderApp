@@ -36,7 +36,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                 Quantity = x.Quantity,
                 RecipeId = x.RecipeId,
                 IngredientId = x.IngredientId
-            }, isDeleted: false);
+            },  false);
 
             return recipeIngredients;
         }
@@ -48,7 +48,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                 Quantity = x.Quantity,
                 RecipeId = x.RecipeId,
                 IngredientId = x.IngredientId
-            }, asNoTrack: true, isDeleted: false);
+            },  false);
 
             return recipeIngredient;
         }

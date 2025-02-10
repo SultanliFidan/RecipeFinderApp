@@ -8,8 +8,8 @@ namespace RecipeFinderApp.Core.Enums
 {
     public enum Roles
     {
-        Admin = 1,
+        Viewer = 1,
         Publisher = 2,
-        Viewer = 3
+        Admin = 3
     }
 }
