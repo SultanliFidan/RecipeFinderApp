@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,20 +21,19 @@ namespace RecipeFinderApp.BL.Services.Implements
 {
     public class EmailService : IEmailService
     {
-        readonly UserManager<User> _userManager;
-        readonly SmtpClient _client;
-        readonly IMemoryCache _cache;
-        readonly IHttpContextAccessor _httpContextAccessor;
-        readonly MailAddress _from;
-        readonly RecipeFinderDbContext _context;
+        private readonly UserManager<User> _userManager;
+        private readonly IMemoryCache _cache;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly MailAddress _from;
+        private readonly RecipeFinderDbContext _context;
+        private readonly EmailOptions _emailOptions;
 
-        public EmailService(IOptions<EmailOptions> options,RecipeFinderDbContext context,UserManager<User> userManager ,SmtpClient client, IMemoryCache cache, IHttpContextAccessor httpContextAccessor)
+        public EmailService(IOptions<EmailOptions> options, RecipeFinderDbContext context,
+                            UserManager<User> userManager, IMemoryCache cache,
+                            IHttpContextAccessor httpContextAccessor)
         {
-            var opt = options.Value;
-            _client = new(opt.Host, opt.Port);
-            _client.Credentials = new NetworkCredential(opt.Sender, opt.Password);
-            _client.EnableSsl = true;
-            _from = new MailAddress(opt.Sender, "RecipeFinder");
+            _emailOptions = options.Value;
+            _from = new MailAddress(_emailOptions.Sender, "RecipeFinder");
             _cache = cache;
             _httpContextAccessor = httpContextAccessor;
             _userManager = userManager;
@@ -41,25 +41,33 @@ namespace RecipeFinderApp.BL.Services.Implements
         }
         public async Task SendEmail()
         {
-            string? email =  _httpContextAccessor.HttpContext?.User.Claims.FirstOrDefault(c => c.Type == ClaimType.Email).Value;
-            string? name = _httpContextAccessor?.HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimType.FullName).Value;
+            string? email = _httpContextAccessor.HttpContext?.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email).Value;
+            string? name = _httpContextAccessor.HttpContext?.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value;
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(name))
                 throw new Exception("User is not authenticated");
             var token = Guid.NewGuid().ToString();
-            _cache.Set(token, name, TimeSpan.FromMinutes(30));
-            MailAddress to = new MailAddress(email);
-            MailMessage message = new(_from,to);
-            message.Subject = "Confirm your email address";
-            message.Body = token;
-            await _client.SendMailAsync(message);
+            _cache.Set(name, token, TimeSpan.FromMinutes(30));
+            using (SmtpClient client = new SmtpClient(_emailOptions.Host, _emailOptions.Port))
+            {
+                client.Credentials = new NetworkCredential(_emailOptions.Sender, _emailOptions.Password);
+                client.EnableSsl = true;
+                client.UseDefaultCredentials = false;
+
+                MailAddress to = new MailAddress(email);
+                MailMessage message = new(_from, to);
+                message.Subject = "Confirm your email adress";
+                message.Body = token;
+                await client.SendMailAsync(message);
+            }
         }
 
         public async Task Verify(string userToken)
         {
-            string? name = _httpContextAccessor?.HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimType.FullName).Value;
+            string? name = _httpContextAccessor.HttpContext?.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value;
             var cacheToken = _cache.Get<string>(name);
             if (string.IsNullOrEmpty(userToken) || string.IsNullOrEmpty(cacheToken) || string.IsNullOrEmpty(name))
                 throw new Exception("User is not authenticated or token is missing");
+
             if (cacheToken != userToken)
                 throw new Exception("User is not authenticated or token is missing");
 

@@ -19,7 +19,7 @@ namespace RecipeFinderApp.BL.Profiles
             .ForMember(dest => dest.Fullname, opt => opt.MapFrom(src => $"{src.Name} {src.Surname}"))
             .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.Username))
             .ForMember(dest => dest.ProfileImageUrl, opt => opt.MapFrom(src => src.Image))
-            .ForMember(dest => dest.EmailConfirmed, opt => opt.MapFrom(src => true)); 
+            .ForMember(dest => dest.EmailConfirmed, opt => opt.MapFrom(src => false)); 
         }
     }
 }

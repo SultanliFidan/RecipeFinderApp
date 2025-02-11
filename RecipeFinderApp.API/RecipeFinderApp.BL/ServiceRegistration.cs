@@ -10,6 +10,7 @@ using RecipeFinderApp.BL.ExternalServices.Abstractions;
 using RecipeFinderApp.BL.ExternalServices.Implements;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.BL.Services.Implements;
+using System.Net.Mail;
 
 namespace RecipeFinderApp.BL
 {
@@ -18,24 +19,20 @@ namespace RecipeFinderApp.BL
 
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
-            services.AddScoped<IEmailService, EmailService>();
+            
             services.AddScoped<IRecipeService, RecipeService>();
             services.AddScoped<IIngredientService, IngredientService>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IRecipeIngredientService, RecipeIngredientService>();
             services.AddScoped<IRecipeCommentService, RecipeCommentService>();
-            services.AddScoped<IJwtTokenHandler, JwtTokenHandler>();
             services.AddScoped<IRecipeRatingService, RecipeRatingService>();
             services.AddScoped<IUserFavoriteRecipeService, UserFavoriteRecipeService>();
+            services.AddScoped<IJwtTokenHandler, JwtTokenHandler>();
+            services.AddScoped<IEmailService, EmailService>();
 
             return services;
         }
 
-        public static IServiceCollection AddAutoMapper(this IServiceCollection services)
-        {
-            services.AddAutoMapper(typeof(ServiceRegistration));
-            return services;
-        }
 
         public static IServiceCollection AddFluentValidation(this IServiceCollection services)
         {
@@ -44,6 +41,11 @@ namespace RecipeFinderApp.BL
             return services;
         }
 
+        public static IServiceCollection AddAutoMapper(this IServiceCollection services)
+        {
+            services.AddAutoMapper(typeof(ServiceRegistration));
+            return services;
+        }
 
     }
 }

@@ -63,14 +63,15 @@ namespace RecipeFinderApp.API
             }).AddDefaultTokenProviders().AddEntityFrameworkStores<RecipeFinderDbContext>();
 
             builder.Services.AddAuth(builder.Configuration);
-            builder.Services.AddJwtOptions(builder.Configuration);
-            builder.Services.AddEmailOptions(builder.Configuration);
+            builder.Services.AddOptions(builder.Configuration);
             builder.Services.AddRepositories();
             builder.Services.AddServices();
+            builder.Services.AddHttpContextAccessor();
             builder.Services.AddFluentValidation();
             builder.Services.AddAutoMapper();
+            builder.Services.AddMemoryCache();
 
-            
+
 
 
             var app = builder.Build();
