@@ -262,6 +262,43 @@
   },
   {
     "ContainingType": "RecipeFinderApp.API.Controllers.RecipeController",
+    "Method": "Comment",
+    "RelativePath": "api/Recipe/Comment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RecipeFinderApp.BL.DTOs.RecipeCommentDtos.RecipeCommentCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecipeFinderApp.API.Controllers.RecipeController",
+    "Method": "Rate",
+    "RelativePath": "api/Recipe/Rate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recipeId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "rate",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecipeFinderApp.API.Controllers.RecipeController",
     "Method": "Restore",
     "RelativePath": "api/Recipe/restore/{id}",
     "HttpMethod": "PUT",

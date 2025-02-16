@@ -24,11 +24,11 @@ namespace RecipeFinderApp.BL.ExternalServices.Implements
         public string CreateToken(User user, int hours = 36)
         {
             List<Claim> claims = [
-            new Claim(ClaimType.Username, user.UserName),
-            new Claim(ClaimType.Email, user.Email),
-            new Claim(ClaimType.Role,user.Role.ToString()),
-            new Claim(ClaimType.Id,user.Id.ToString()),
-            new Claim(ClaimType.FullName,user.Fullname)
+            new Claim(ClaimTypes.Name, user.UserName),
+            new Claim(ClaimTypes.Email, user.Email),
+            new Claim(ClaimTypes.Role,user.Role.ToString()),
+            new Claim(ClaimTypes.NameIdentifier,user.Id.ToString()),
+            //new Claim(ClaimTypes.FullName,user.Fullname)
             ];
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(opt.SecretKey));
             SigningCredentials cred = new(key, SecurityAlgorithms.HmacSha256);

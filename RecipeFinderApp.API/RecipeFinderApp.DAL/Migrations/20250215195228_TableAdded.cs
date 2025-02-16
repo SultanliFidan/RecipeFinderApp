@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RecipeFinderApp.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class UserTableAdded : Migration
+    public partial class TableAdded : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -208,6 +208,7 @@ namespace RecipeFinderApp.DAL.Migrations
                     Comment = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
                     RecipeId = table.Column<int>(type: "int", nullable: true),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    ParentId = table.Column<int>(type: "int", nullable: true),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -218,6 +219,11 @@ namespace RecipeFinderApp.DAL.Migrations
                         name: "FK_RecipeComments_AspNetUsers_UserId",
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_RecipeComments_RecipeComments_ParentId",
+                        column: x => x.ParentId,
+                        principalTable: "RecipeComments",
                         principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_RecipeComments_Recipes_RecipeId",
@@ -344,6 +350,11 @@ namespace RecipeFinderApp.DAL.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_RecipeComments_ParentId",
+                table: "RecipeComments",
+                column: "ParentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_RecipeComments_RecipeId",

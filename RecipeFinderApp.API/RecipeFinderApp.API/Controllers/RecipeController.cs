@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RecipeFinderApp.BL.DTOs.RecipeCommentDtos;
 using RecipeFinderApp.BL.DTOs.RecipeDTOs;
 using RecipeFinderApp.BL.Services.Abstractions;
+using RecipeFinderApp.Core.Enums;
+using System.Runtime.InteropServices;
 
 namespace RecipeFinderApp.API.Controllers
 {
@@ -58,6 +61,22 @@ namespace RecipeFinderApp.API.Controllers
         {
             await _recipeService.RestoreRecipe(id);
             return Ok("Recipe restored successfully");
+        }
+
+        [HttpPost("[action]")]
+        
+        public async Task<IActionResult> Comment(RecipeCommentCreateDto dto)
+        {
+            await _recipeService.RecipeComment(dto);
+            return Ok();
+        }
+
+        [HttpPost("[action]")]
+
+        public async Task<IActionResult> Rate(int? recipeId, int rate = 1)
+        {
+            await _recipeService.Rate(recipeId,rate);
+            return Ok();
         }
     }
 }

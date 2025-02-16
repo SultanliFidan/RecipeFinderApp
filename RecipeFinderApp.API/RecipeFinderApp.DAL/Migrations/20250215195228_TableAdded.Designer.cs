@@ -12,8 +12,8 @@ using RecipeFinderApp.DAL.Context;
 namespace RecipeFinderApp.DAL.Migrations
 {
     [DbContext(typeof(RecipeFinderDbContext))]
-    [Migration("20250208163219_UserTableAdded")]
-    partial class UserTableAdded
+    [Migration("20250215195228_TableAdded")]
+    partial class TableAdded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -244,6 +244,9 @@ namespace RecipeFinderApp.DAL.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("ParentId")
+                        .HasColumnType("int");
+
                     b.Property<int?>("RecipeId")
                         .HasColumnType("int");
 
@@ -251,6 +254,8 @@ namespace RecipeFinderApp.DAL.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ParentId");
 
                     b.HasIndex("RecipeId");
 
@@ -496,6 +501,10 @@ namespace RecipeFinderApp.DAL.Migrations
 
             modelBuilder.Entity("RecipeFinderApp.Core.Entities.RecipeComment", b =>
                 {
+                    b.HasOne("RecipeFinderApp.Core.Entities.RecipeComment", "Parent")
+                        .WithMany("Children")
+                        .HasForeignKey("ParentId");
+
                     b.HasOne("RecipeFinderApp.Core.Entities.Recipe", "Recipe")
                         .WithMany("RecipeComments")
                         .HasForeignKey("RecipeId");
@@ -503,6 +512,8 @@ namespace RecipeFinderApp.DAL.Migrations
                     b.HasOne("RecipeFinderApp.Core.Entities.User", "User")
                         .WithMany("RecipeComments")
                         .HasForeignKey("UserId");
+
+                    b.Navigation("Parent");
 
                     b.Navigation("Recipe");
 
@@ -576,6 +587,11 @@ namespace RecipeFinderApp.DAL.Migrations
                     b.Navigation("RecipeRatings");
 
                     b.Navigation("UserFavoriteRecipes");
+                });
+
+            modelBuilder.Entity("RecipeFinderApp.Core.Entities.RecipeComment", b =>
+                {
+                    b.Navigation("Children");
                 });
 
             modelBuilder.Entity("RecipeFinderApp.Core.Entities.User", b =>

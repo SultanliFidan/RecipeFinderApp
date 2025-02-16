@@ -1,20 +1,28 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using RecipeFinderApp.BL.Constants;
+using RecipeFinderApp.BL.DTOs.RecipeCommentDtos;
 using RecipeFinderApp.BL.DTOs.RecipeDTOs;
+using RecipeFinderApp.BL.DTOs.RecipeRatingDTOs;
 using RecipeFinderApp.BL.Exceptioins.Common;
 using RecipeFinderApp.BL.Extensions;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Entities;
 using RecipeFinderApp.Core.Repositories;
+using RecipeFinderApp.DAL.Context;
 using RecipeFinderApp.DAL.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace RecipeFinderApp.BL.Services.Implements
 {
-    public class RecipeService(IMapper _mapper, IGenericRepository<Recipe> _recipeRepository) : IRecipeService
+    public class RecipeService(IMapper _mapper, IGenericRepository<Recipe> _recipeRepository, 
+        IRecipeCommentRepository _comment, IHttpContextAccessor _httpContext, RecipeFinderDbContext _context,IRecipeRatingRepository _rating) : IRecipeService
     {
         public async Task CreateRecipe(RecipeCreateDto dto, string uploadPath)
         {
@@ -114,6 +122,59 @@ namespace RecipeFinderApp.BL.Services.Implements
             }
 
             await _recipeRepository.SaveAsync();
+        }
+
+        public async Task RecipeComment(RecipeCommentCreateDto dto)
+        {
+            RecipeComment? parent = null;
+            if (dto.ParentId.HasValue)
+            {
+                parent = await _comment.GetByIdAsync(dto.ParentId.Value);
+                if (parent is null)
+                    throw new NotFoundException<RecipeComment>();
+            }
+            var entity = _mapper.Map<RecipeComment>(dto);
+            entity.UserId = _httpContext.HttpContext?.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+            entity.RecipeId = parent?.RecipeId ?? dto.RecipeId;
+            await _comment.AddAsync(entity);
+            await _comment.SaveAsync();
+        }
+
+        public async Task Rate(int? recipeId, int rate = 1)
+        {
+            if (!recipeId.HasValue)
+                throw new ArgumentNullException(nameof(recipeId));
+
+            var claim = _httpContext.HttpContext?.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier);
+            if (claim == null)
+                throw new Exception("User ID claim not found");
+
+            string userId = claim.Value;
+            if (string.IsNullOrEmpty(userId))
+                throw new Exception("User ID is empty");
+
+            if (!await _context.Recipes.AnyAsync(x => x.Id == recipeId))
+                throw new NotFoundException<RecipeRating>();
+
+            var rating = await _context.RecipeRatings
+                .Where(x => x.RecipeId == recipeId && x.UserId == userId)
+                .FirstOrDefaultAsync();
+
+            if (rating is null)
+            {
+                await _context.RecipeRatings.AddAsync(new RecipeRating
+                {
+                    RecipeId = recipeId.Value,
+                    RatingRate = rate,
+                    UserId = userId
+                });
+            }
+            else
+            {
+                rating.RatingRate = rate;
+            }
+
+            await _context.SaveChangesAsync(); // Note: Changed from _rating to _context
         }
     }
 }

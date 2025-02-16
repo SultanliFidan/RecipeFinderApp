@@ -9,11 +9,9 @@ namespace RecipeFinderApp.BL.DTOs.RecipeCommentDtos
     public class RecipeCommentGetDto
     {
         public int Id { get; set; }
-        public string UserId { get; set; }
-        public int RecipeId { get; set; }
+        public int ParentId { get; set; }
         public string Comment { get; set; }
-        public string UserFullname { get; set; } 
-        public string? UserProfileImage { get; set; } 
-        public DateTime CreatedAt { get; set; }
+        public IEnumerable<RecipeCommentGetDto> Children { get; set; }
+
     }
 }

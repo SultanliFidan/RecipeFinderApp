@@ -8,7 +8,7 @@ namespace RecipeFinderApp.BL.DTOs.RecipeCommentDtos
 {
     public class RecipeCommentCreateDto
     {
-        public string UserId { get; set; } 
+        public int? ParentId { get; set; } 
         public int RecipeId { get; set; }  
         public string Comment { get; set; }
     }

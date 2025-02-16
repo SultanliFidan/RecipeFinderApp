@@ -1,4 +1,5 @@
-﻿using RecipeFinderApp.BL.DTOs.RecipeDTOs;
+﻿using RecipeFinderApp.BL.DTOs.RecipeCommentDtos;
+using RecipeFinderApp.BL.DTOs.RecipeDTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,8 @@ namespace RecipeFinderApp.BL.Services.Abstractions
         Task SoftDeleteRecipe(int id);  
         Task RestoreRecipe(int id);  
         Task<RecipeGetDto?> GetByIdRecipe(int id);
+        Task RecipeComment(RecipeCommentCreateDto dto);
+        Task Rate(int? recipeId, int rate = 1);
         Task<IEnumerable<RecipeGetDto>> GetAllRecipe();  // Aktiv reseptlər
         Task<IEnumerable<RecipeGetDto>> GetAllDeletedRecipe();  // Silinmiş reseptlər
     }
