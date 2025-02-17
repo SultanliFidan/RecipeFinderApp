@@ -6,9 +6,11 @@ using RecipeFinderApp.BL.DTOs.RecipeCommentDtos;
 using RecipeFinderApp.BL.DTOs.RecipeDTOs;
 using RecipeFinderApp.BL.DTOs.RecipeRatingDTOs;
 using RecipeFinderApp.BL.Exceptioins.Common;
+using RecipeFinderApp.BL.Exceptioins.UserException;
 using RecipeFinderApp.BL.Extensions;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Entities;
+using RecipeFinderApp.Core.Enums;
 using RecipeFinderApp.Core.Repositories;
 using RecipeFinderApp.DAL.Context;
 using RecipeFinderApp.DAL.Repositories;
@@ -26,7 +28,9 @@ namespace RecipeFinderApp.BL.Services.Implements
     {
         public async Task CreateRecipe(RecipeCreateDto dto, string uploadPath)
         {
+          
             Recipe recipe = _mapper.Map<Recipe>(dto);
+            
             if (dto.File != null && dto.File.isValidType("image") && dto.File.isValidSize(400))
             {
                 string fileName = await dto.File.UploadAsync(uploadPath);
@@ -143,15 +147,10 @@ namespace RecipeFinderApp.BL.Services.Implements
         public async Task Rate(int? recipeId, int rate = 1)
         {
             if (!recipeId.HasValue)
-                throw new ArgumentNullException(nameof(recipeId));
+                throw new Exception();
 
-            var claim = _httpContext.HttpContext?.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier);
-            if (claim == null)
-                throw new Exception("User ID claim not found");
-
-            string userId = claim.Value;
-            if (string.IsNullOrEmpty(userId))
-                throw new Exception("User ID is empty");
+            var userId = _httpContext.HttpContext?.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)!.Value;
+            
 
             if (!await _context.Recipes.AnyAsync(x => x.Id == recipeId))
                 throw new NotFoundException<RecipeRating>();
@@ -174,7 +173,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                 rating.RatingRate = rate;
             }
 
-            await _context.SaveChangesAsync(); // Note: Changed from _rating to _context
+            await _rating.SaveAsync(); 
         }
     }
 }
