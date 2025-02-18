@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RecipeFinderApp.BL.Attributes;
 using RecipeFinderApp.BL.DTOs.RecipeCommentDtos;
@@ -13,10 +14,10 @@ namespace RecipeFinderApp.API.Controllers
     [ApiController]
     public class RecipeController(IRecipeService _recipeService, IWebHostEnvironment _env) : ControllerBase
     {
-
+        
         [HttpPost]
         //[Auth(Roles.Publisher)]
-        public async Task<IActionResult> Create(RecipeCreateDto dto)
+        public async Task<IActionResult> Create([FromForm] RecipeCreateDto dto)
         {
             string destination = _env.WebRootPath;
             await _recipeService.CreateRecipe(dto, destination);
@@ -46,7 +47,7 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Auth(Roles.Publisher)]
+        //[Auth(Roles.Publisher)]
         public async Task<IActionResult> Delete(int id)
         {
             await _recipeService.DeleteRecipe(id);
@@ -54,7 +55,7 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpDelete("soft-delete/{id}")]
-        [Auth(Roles.Publisher)]
+        //[Auth(Roles.Publisher)]
         public async Task<IActionResult> SoftDelete(int id)
         {
             await _recipeService.SoftDeleteRecipe(id);
@@ -62,7 +63,7 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpPut("restore/{id}")]
-        [Auth(Roles.Publisher)]
+        //[Auth(Roles.Publisher)]
         public async Task<IActionResult> Restore(int id)
         {
             await _recipeService.RestoreRecipe(id);

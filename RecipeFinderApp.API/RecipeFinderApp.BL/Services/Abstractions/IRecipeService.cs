@@ -10,7 +10,7 @@ namespace RecipeFinderApp.BL.Services.Abstractions
 {
     public interface IRecipeService
     {
-        Task CreateRecipe(RecipeCreateDto dto, string uploadPath);
+        Task CreateRecipe(RecipeCreateDto dto, string destination);
         Task UpdateRecipe(int id,RecipeUpdateDto dto, string uploadPath);
         Task DeleteRecipe(int id); 
         Task SoftDeleteRecipe(int id);  

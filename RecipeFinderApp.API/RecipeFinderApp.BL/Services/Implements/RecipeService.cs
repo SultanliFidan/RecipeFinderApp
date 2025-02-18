@@ -26,15 +26,22 @@ namespace RecipeFinderApp.BL.Services.Implements
     public class RecipeService(IMapper _mapper, IGenericRepository<Recipe> _recipeRepository, 
         IRecipeCommentRepository _comment, IHttpContextAccessor _httpContext, RecipeFinderDbContext _context,IRecipeRatingRepository _rating) : IRecipeService
     {
-        public async Task CreateRecipe(RecipeCreateDto dto, string uploadPath)
+        public async Task CreateRecipe(RecipeCreateDto dto, string destination)
         {
-          
+            //var userId = _httpContext.HttpContext?.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+            //if (userId == null) throw new UnauthorizedAccessException("User not authenticated");
+            //var userRole = _httpContext.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role)?.Value;
+            //if (userRole != Roles.Publisher.ToString())
+            //{
+            //    throw new UserHasNotPermissionException("Only publishers can create recipes.");
+            //}
+
             Recipe recipe = _mapper.Map<Recipe>(dto);
-            
+            //recipe.UserId = userId;
+
             if (dto.File != null && dto.File.isValidType("image") && dto.File.isValidSize(400))
             {
-                string fileName = await dto.File.UploadAsync(uploadPath);
-                recipe.ImageUrl = Path.Combine("wwwroot","recipes",fileName);
+                recipe.ImageUrl = await dto.File!.UploadAsync(destination, "images", "recipes");
             } 
 
             await _recipeRepository.AddAsync(recipe);
@@ -43,8 +50,15 @@ namespace RecipeFinderApp.BL.Services.Implements
 
         public async Task DeleteRecipe(int id)
         {
-           
-            await _recipeRepository.DeleteAndSaveAsync(id);
+            Recipe? recipe = await _context.Recipes.FindAsync(id);
+            if (recipe is null) throw new NotFoundException<Recipe>();
+            var path = Path.Combine("wwwroot","images","recipes",  recipe.ImageUrl);
+            if (System.IO.File.Exists(path))
+            {
+                System.IO.File.Delete(path);
+            }
+            _context.Recipes.Remove(recipe);
+            await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<RecipeGetDto>> GetAllRecipe()
@@ -105,10 +119,7 @@ namespace RecipeFinderApp.BL.Services.Implements
 
         public async Task SoftDeleteRecipe(int id)
         {
-            var recipe = await _recipeRepository.GetByIdAsync(id, false);
-            if (recipe == null) throw new NotFoundException<Recipe>();
-
-            recipe.IsDeleted = true; 
+            await _recipeRepository.SoftDeleteAsync(id);
             await _recipeRepository.SaveAsync();
         }
 

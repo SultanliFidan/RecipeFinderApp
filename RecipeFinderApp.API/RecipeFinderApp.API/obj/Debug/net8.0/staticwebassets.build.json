@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "E8xog9j8i55aSELTTJ0Lqj8Ib/PW5INgP34cJRBj09k=",
+  "Hash": "VoRcJOaRQOaoQGEOqqBjot1lUjb+tt4nwfDYEjTcE04=",
   "Source": "RecipeFinderApp.API",
   "BasePath": "_content/RecipeFinderApp.API",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\0ks0lnso.blf.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\apidyyq1.hyk.jpg",
+      "SourceId": "RecipeFinderApp.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\",
+      "BasePath": "_content/RecipeFinderApp.API",
+      "RelativePath": "apidyyq1.hyk.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\apidyyq1.hyk.jpg"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\aqcudwrn.5q2.jpg",
@@ -186,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sfapwfzo.qrm.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\tua5a5yn.5xi.jpg",
+      "SourceId": "RecipeFinderApp.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\",
+      "BasePath": "_content/RecipeFinderApp.API",
+      "RelativePath": "tua5a5yn.5xi.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\tua5a5yn.5xi.jpg"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\uiw3k0at.gis.jpg",
