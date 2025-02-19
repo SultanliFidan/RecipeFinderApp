@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using RecipeFinderApp.BL.Attributes;
 using RecipeFinderApp.BL.DTOs.RecipeCommentDtos;
 using RecipeFinderApp.BL.DTOs.RecipeDTOs;
+using RecipeFinderApp.BL.Helpers;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Enums;
 using System.Runtime.InteropServices;
@@ -17,7 +18,8 @@ namespace RecipeFinderApp.API.Controllers
         
         [HttpPost]
         //[Auth(Roles.Publisher)]
-        public async Task<IActionResult> Create([FromForm] RecipeCreateDto dto)
+        [Authorize(Roles = RoleConstants.Recipe)]
+        public async Task<IActionResult> Create(RecipeCreateDto dto)
         {
             string destination = _env.WebRootPath;
             await _recipeService.CreateRecipe(dto, destination);

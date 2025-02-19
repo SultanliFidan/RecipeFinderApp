@@ -12,7 +12,7 @@ namespace RecipeFinderApp.Core.Entities
     {
         public string Fullname { get; set; }
         public string? ProfileImageUrl { get; set; }
-        public Roles Role { get; set; } = Roles.Viewer;
+        public Roles Role { get; set; } 
         public ICollection<Recipe>? Recipes { get; set; }
         public ICollection<RecipeComment>? RecipeComments { get; set; }
         public ICollection<RecipeRating>? RecipeRatings { get; set; }

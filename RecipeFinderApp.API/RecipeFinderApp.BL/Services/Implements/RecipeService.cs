@@ -28,17 +28,16 @@ namespace RecipeFinderApp.BL.Services.Implements
     {
         public async Task CreateRecipe(RecipeCreateDto dto, string destination)
         {
-            //var userId = _httpContext.HttpContext?.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
-            //if (userId == null) throw new UnauthorizedAccessException("User not authenticated");
-            //var userRole = _httpContext.HttpContext?.User?.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role)?.Value;
-            //if (userRole != Roles.Publisher.ToString())
-            //{
-            //    throw new UserHasNotPermissionException("Only publishers can create recipes.");
-            //}
 
+
+            string? userId = _httpContext.HttpContext?.User?.Claims
+           .FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userId))
+                throw new AuthorizationException("User is not authenticated!");
             Recipe recipe = _mapper.Map<Recipe>(dto);
-            //recipe.UserId = userId;
-
+            recipe.UserId = userId;
+            
             if (dto.File != null && dto.File.isValidType("image") && dto.File.isValidSize(400))
             {
                 recipe.ImageUrl = await dto.File!.UploadAsync(destination, "images", "recipes");

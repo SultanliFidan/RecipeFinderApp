@@ -5,6 +5,7 @@ using RecipeFinderApp.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,7 +21,7 @@ namespace RecipeFinderApp.BL.Attributes
         }
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            var value = context.HttpContext.User.FindFirst(x => x.Type == ClaimType.Role)!.Value;
+            var value = context.HttpContext.User.FindFirst(x => x.Type == ClaimTypes.Role)?.Value;
             if (value == null) throw new AuthorizationException();
             int role = Convert.ToInt32(value);
 

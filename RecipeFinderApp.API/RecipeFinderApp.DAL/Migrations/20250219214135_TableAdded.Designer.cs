@@ -12,7 +12,7 @@ using RecipeFinderApp.DAL.Context;
 namespace RecipeFinderApp.DAL.Migrations
 {
     [DbContext(typeof(RecipeFinderDbContext))]
-    [Migration("20250215195228_TableAdded")]
+    [Migration("20250219214135_TableAdded")]
     partial class TableAdded
     {
         /// <inheritdoc />
