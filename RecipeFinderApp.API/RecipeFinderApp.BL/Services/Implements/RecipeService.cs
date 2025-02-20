@@ -62,6 +62,7 @@ namespace RecipeFinderApp.BL.Services.Implements
 
         public async Task<IEnumerable<RecipeGetDto>> GetAllRecipe()
         {
+           
             var recipes = await _recipeRepository.GetAllAsync(x => new RecipeGetDto
             {
                 Id = x.Id,
@@ -69,13 +70,25 @@ namespace RecipeFinderApp.BL.Services.Implements
                 Instruction = x.Instruction,
                 ImageUrl = x.ImageUrl,
                 PreparationTime = x.PreparationTime,
+                RecipeComments = x.RecipeComments.Where(x => x.ParentId == 0).ToList(),
+                RecipeRatings = x.RecipeRatings,
                 UserId = x.UserId,
                 Ingredients = x.RecipeIngredients.Select(x => x.Ingredient.Name).ToList()
-            }, false);
+            }, false,true,true);
 
             return recipes;
 
         }
+
+        //private RecipeCommentGetDto convertCGD(RecipeComment a)
+        //{
+        //    return new RecipeCommentGetDto
+        //    {
+        //        Comment = a.Comment,
+        //        Id = a.Id,
+        //        Children = a.Children.Select(z => convertCGD(z))
+        //    };
+        //}
 
         public async Task<IEnumerable<RecipeGetDto>> GetAllDeletedRecipe()
         {
@@ -104,6 +117,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                 ImageUrl = x.ImageUrl,
                 PreparationTime = x.PreparationTime,
                 UserId = x.UserId,
+                RecipeRatings = x.RecipeRatings,
                 Ingredients = x.RecipeIngredients.Select(x => x.Ingredient.Name).ToList()
             }, false);
 

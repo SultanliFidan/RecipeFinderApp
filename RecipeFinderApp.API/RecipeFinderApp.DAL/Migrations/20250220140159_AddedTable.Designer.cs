@@ -12,8 +12,8 @@ using RecipeFinderApp.DAL.Context;
 namespace RecipeFinderApp.DAL.Migrations
 {
     [DbContext(typeof(RecipeFinderDbContext))]
-    [Migration("20250219214135_TableAdded")]
-    partial class TableAdded
+    [Migration("20250220140159_AddedTable")]
+    partial class AddedTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -380,9 +380,6 @@ namespace RecipeFinderApp.DAL.Migrations
                     b.Property<string>("ProfileImageUrl")
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
-
-                    b.Property<int>("Role")
-                        .HasColumnType("int");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");

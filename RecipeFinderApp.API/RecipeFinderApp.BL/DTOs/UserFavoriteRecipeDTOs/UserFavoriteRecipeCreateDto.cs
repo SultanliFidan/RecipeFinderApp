@@ -9,7 +9,7 @@ namespace RecipeFinderApp.BL.DTOs.UserFavoriteRecipeDTOs
 {
     public class UserFavoriteRecipeCreateDto
     {
-        public string UserId { get; set; }
+        //public string UserId { get; set; }
         public int RecipeId { get; set; }
     }
 }

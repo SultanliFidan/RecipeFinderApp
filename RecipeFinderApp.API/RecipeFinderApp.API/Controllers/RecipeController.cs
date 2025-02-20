@@ -40,7 +40,7 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpPut("{id}")]
-        [Auth(Roles.Publisher)]
+        
         public async Task<IActionResult> Update(int id,RecipeUpdateDto dto)
         {
             string destination = _env.WebRootPath;
@@ -73,8 +73,8 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpPost("[action]")]
-        [Auth(Roles.Publisher | Roles.Viewer)]
-        
+        //[Auth(Roles.Publisher | Roles.Viewer)]
+        [Authorize(Roles = RoleConstants.Recipe)]
         public async Task<IActionResult> Comment(RecipeCommentCreateDto dto)
         {
             await _recipeService.RecipeComment(dto);
@@ -82,7 +82,7 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpPost("[action]")]
-        [Auth(Roles.Publisher | Roles.Viewer)]
+        //[Auth(Roles.Publisher | Roles.Viewer)]
         public async Task<IActionResult> Rate(int? recipeId, int rate = 1)
         {
             await _recipeService.Rate(recipeId,rate);

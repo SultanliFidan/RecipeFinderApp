@@ -72,7 +72,16 @@ namespace RecipeFinderApp.BL.Services.Implements
                 throw new Exception("User is not authenticated or token is missing");
 
             User? user = await _userManager.FindByNameAsync(name);
-            user!.Role = Roles.Publisher;
+            string role = nameof(Roles.Publisher);
+            var currentRoles = await _userManager.GetRolesAsync(user);
+
+            // Remove old roles (if necessary)
+            await _userManager.RemoveFromRolesAsync(user, currentRoles);
+            var result = await _userManager.AddToRoleAsync(user, role);
+            if (!result.Succeeded)
+            {
+                throw new Exception("islemir");
+            }
             await _context.SaveChangesAsync();
         }
     }
