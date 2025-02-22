@@ -96,9 +96,15 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> Filter(int preparationTime,string ingredient)
+        public async Task<IActionResult> Filter(int? preparationTime,string? ingredient)
         {
             return Ok(await _recipeService.GetFilteredRecipe(preparationTime,ingredient));
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Search(string title)
+        {
+            return Ok(await _recipeService.GetSearchedRecipe(title));
         }
 
     }

@@ -75,7 +75,7 @@ namespace RecipeFinderApp.BL.Services.Implements
             string role = nameof(Roles.Publisher);
             var currentRoles = await _userManager.GetRolesAsync(user);
 
-            // Remove old roles (if necessary)
+           
             await _userManager.RemoveFromRolesAsync(user, currentRoles);
             var result = await _userManager.AddToRoleAsync(user, role);
             if (!result.Succeeded)

@@ -83,7 +83,10 @@ namespace RecipeFinderApp.API
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
-                app.UseSwaggerUI();
+                app.UseSwaggerUI(opt =>
+                {
+                    opt.EnablePersistAuthorization();
+                });
             }
             
             app.UseHttpsRedirection();

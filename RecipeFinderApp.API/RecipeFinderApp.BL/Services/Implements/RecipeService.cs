@@ -70,7 +70,19 @@ namespace RecipeFinderApp.BL.Services.Implements
                 Instruction = x.Instruction,
                 ImageUrl = x.ImageUrl,
                 PreparationTime = x.PreparationTime,
-                RecipeComments = x.RecipeComments.Where(x => x.ParentId == 0).ToList(),
+                RecipeComments = x.RecipeComments.Where(x => x.ParentId == null).Select(x => new RecipeCommentGetDto
+                {
+                    Comment = x.Comment,
+                    Id = x.Id,
+                    ParentId = x.ParentId,
+                    Children = x.Children.Select(x => new RecipeCommentGetDto
+                    {
+                        Comment = x.Comment,
+                        Id = x.Id,
+                        ParentId = x.ParentId
+                    })
+                   
+                }).ToList(),
                 RecipeRatings = x.RecipeRatings,
                 UserId = x.UserId,
                 Ingredients = x.RecipeIngredients.Select(x => x.Ingredient.Name).ToList()
@@ -80,15 +92,6 @@ namespace RecipeFinderApp.BL.Services.Implements
 
         }
 
-        //private RecipeCommentGetDto convertCGD(RecipeComment a)
-        //{
-        //    return new RecipeCommentGetDto
-        //    {
-        //        Comment = a.Comment,
-        //        Id = a.Id,
-        //        Children = a.Children.Select(z => convertCGD(z))
-        //    };
-        //}
 
         public async Task<IEnumerable<RecipeGetDto>> GetAllDeletedRecipe()
         {
@@ -100,7 +103,21 @@ namespace RecipeFinderApp.BL.Services.Implements
                 ImageUrl = x.ImageUrl,
                 PreparationTime = x.PreparationTime,
                 UserId = x.UserId,
-                Ingredients = x.RecipeIngredients.Select(ri => ri.Ingredient.Name).ToList()
+                Ingredients = x.RecipeIngredients.Select(ri => ri.Ingredient.Name).ToList(),
+                RecipeComments = x.RecipeComments.Where(x => x.ParentId == null).Select(x => new RecipeCommentGetDto
+                {
+                    Comment = x.Comment,
+                    Id = x.Id,
+                    ParentId = x.ParentId,
+                    Children = x.Children.Select(x => new RecipeCommentGetDto
+                    {
+                        Comment = x.Comment,
+                        Id = x.Id,
+                        ParentId = x.ParentId
+                    })
+
+                }).ToList(),
+                RecipeRatings = x.RecipeRatings
             },
         isDeleted: true);
 
@@ -117,6 +134,19 @@ namespace RecipeFinderApp.BL.Services.Implements
                 ImageUrl = x.ImageUrl,
                 PreparationTime = x.PreparationTime,
                 UserId = x.UserId,
+                RecipeComments = x.RecipeComments.Where(x => x.ParentId == null).Select(x => new RecipeCommentGetDto
+                {
+                    Comment = x.Comment,
+                    Id = x.Id,
+                    ParentId = x.ParentId,
+                    Children = x.Children.Select(x => new RecipeCommentGetDto
+                    {
+                        Comment = x.Comment,
+                        Id = x.Id,
+                        ParentId = x.ParentId
+                    })
+
+                }).ToList(),
                 RecipeRatings = x.RecipeRatings,
                 Ingredients = x.RecipeIngredients.Select(x => x.Ingredient.Name).ToList()
             }, false);
@@ -200,7 +230,7 @@ namespace RecipeFinderApp.BL.Services.Implements
             await _rating.SaveAsync(); 
         }
 
-        public async Task<IEnumerable<RecipeGetDto>> GetFilteredRecipe(int preparationTime, string ingredient)
+        public async Task<IEnumerable<RecipeGetDto>> GetFilteredRecipe(int? preparationTime,string? ingredient)
         {
             var query = _recipeRepository.GetQuery(x => new RecipeGetDto
             {
@@ -208,10 +238,23 @@ namespace RecipeFinderApp.BL.Services.Implements
                 Title = x.Title,
                 Instruction = x.Instruction,
                 PreparationTime = x.PreparationTime,
-                RecipeRatings = x.RecipeRatings.ToList(),
+                RecipeRatings = x.RecipeRatings,
+                RecipeComments = x.RecipeComments.Where(x => x.ParentId == null).Select(x => new RecipeCommentGetDto
+                {
+                    Comment = x.Comment,
+                    Id = x.Id,
+                    ParentId = x.ParentId,
+                    Children = x.Children.Select(x => new RecipeCommentGetDto
+                    {
+                        Comment = x.Comment,
+                        Id = x.Id,
+                        ParentId = x.ParentId
+                    })
+
+                }).ToList(),
                 ImageUrl = x.ImageUrl,
                 UserId = x.UserId,
-                RecipeComments = x.RecipeComments,
+                
                 Ingredients = x.RecipeIngredients.Select(x => x.Ingredient.Name).ToList()
 
             }, true, false);
@@ -224,6 +267,44 @@ namespace RecipeFinderApp.BL.Services.Implements
             if (!string.IsNullOrWhiteSpace(ingredient))
             {
                 query = query.Where(x => x.Ingredients.Any(i => i.Contains(ingredient)));
+            }
+
+            return await query.ToListAsync();
+        }
+
+        public async Task<IEnumerable<RecipeGetDto>> GetSearchedRecipe(string title)
+        {
+            var query = _recipeRepository.GetQuery(x => new RecipeGetDto
+            {
+                Id = x.Id,
+                Title = x.Title,
+                Instruction = x.Instruction,
+                PreparationTime = x.PreparationTime,
+                RecipeRatings = x.RecipeRatings,
+                RecipeComments = x.RecipeComments.Where(x => x.ParentId == null).Select(x => new RecipeCommentGetDto
+                {
+                    Comment = x.Comment,
+                    Id = x.Id,
+                    ParentId = x.ParentId,
+                    Children = x.Children.Select(x => new RecipeCommentGetDto
+                    {
+                        Comment = x.Comment,
+                        Id = x.Id,
+                        ParentId = x.ParentId
+                    })
+
+                }).ToList(),
+                ImageUrl = x.ImageUrl,
+                UserId = x.UserId,
+
+                Ingredients = x.RecipeIngredients.Select(x => x.Ingredient.Name).ToList()
+
+            }, true, false);
+
+            
+            if (!string.IsNullOrWhiteSpace(title))
+            {
+                query = query.Where(x => x.Title.Contains(title) || title.Contains(x.Title));
             }
 
             return await query.ToListAsync();

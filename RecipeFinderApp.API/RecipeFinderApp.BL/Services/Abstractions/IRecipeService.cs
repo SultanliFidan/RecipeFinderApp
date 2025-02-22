@@ -20,6 +20,7 @@ namespace RecipeFinderApp.BL.Services.Abstractions
         Task Rate(int? recipeId, int rate = 1);
         Task<IEnumerable<RecipeGetDto>> GetAllRecipe();  // Aktiv reseptlər
         Task<IEnumerable<RecipeGetDto>> GetAllDeletedRecipe();  // Silinmiş reseptlər
-        Task<IEnumerable<RecipeGetDto>> GetFilteredRecipe(int preparationTime, string ingredient);
+        Task<IEnumerable<RecipeGetDto>> GetFilteredRecipe(int? preparationTime, string? ingredient);
+        Task<IEnumerable<RecipeGetDto>> GetSearchedRecipe(string title);
     }
 }
