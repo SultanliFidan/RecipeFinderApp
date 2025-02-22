@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace RecipeFinderApp.BL.Services.Abstractions
 {
-    public interface IEmailService
+    public interface IVerifyService
     {
-        Task SendEmail();
-        
+        Task Verify(string userToken);
     }
 }

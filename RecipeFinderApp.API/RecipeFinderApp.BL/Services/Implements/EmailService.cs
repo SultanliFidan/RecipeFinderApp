@@ -21,7 +21,7 @@ namespace RecipeFinderApp.BL.Services.Implements
 {
     public class EmailService : IEmailService
     {
-        private readonly UserManager<User> _userManager;
+        
         private readonly IMemoryCache _cache;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly MailAddress _from;
@@ -36,7 +36,7 @@ namespace RecipeFinderApp.BL.Services.Implements
             _from = new MailAddress(_emailOptions.Sender, "RecipeFinder");
             _cache = cache;
             _httpContextAccessor = httpContextAccessor;
-            _userManager = userManager;
+           
             _context = context;
         }
         public async Task SendEmail()
@@ -61,28 +61,6 @@ namespace RecipeFinderApp.BL.Services.Implements
             }
         }
 
-        public async Task Verify(string userToken)
-        {
-            string? name = _httpContextAccessor.HttpContext?.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value;
-            var cacheToken = _cache.Get<string>(name);
-            if (string.IsNullOrEmpty(userToken) || string.IsNullOrEmpty(cacheToken) || string.IsNullOrEmpty(name))
-                throw new Exception("User is not authenticated or token is missing");
-
-            if (cacheToken != userToken)
-                throw new Exception("User is not authenticated or token is missing");
-
-            User? user = await _userManager.FindByNameAsync(name);
-            string role = nameof(Roles.Publisher);
-            var currentRoles = await _userManager.GetRolesAsync(user);
-
-           
-            await _userManager.RemoveFromRolesAsync(user, currentRoles);
-            var result = await _userManager.AddToRoleAsync(user, role);
-            if (!result.Succeeded)
-            {
-                throw new Exception("islemir");
-            }
-            await _context.SaveChangesAsync();
-        }
+        
     }
 }

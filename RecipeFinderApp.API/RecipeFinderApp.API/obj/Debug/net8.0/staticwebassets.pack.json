@@ -1,24 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\0ks0lnso.blf.jpg",
-      "PackagePath": "staticwebassets\\0ks0lnso.blf.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\apidyyq1.hyk.jpg",
-      "PackagePath": "staticwebassets\\apidyyq1.hyk.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\aqcudwrn.5q2.jpg",
-      "PackagePath": "staticwebassets\\aqcudwrn.5q2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\d04bufkk.ed2.jpg",
-      "PackagePath": "staticwebassets\\d04bufkk.ed2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\h0t2ugzc.d3j.jpg",
-      "PackagePath": "staticwebassets\\h0t2ugzc.d3j.jpg"
+      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\images\\recipes\\2ryuosuj.fha.webp",
+      "PackagePath": "staticwebassets\\images\\recipes\\2ryuosuj.fha.webp"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\images\\recipes\\5ukhaych.5gn.jpg",
@@ -49,44 +33,16 @@
       "PackagePath": "staticwebassets\\images\\recipes\\k2afdnej.oa3.jpg"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\images\\recipes\\m2agngsf.xyq.jpg",
+      "PackagePath": "staticwebassets\\images\\recipes\\m2agngsf.xyq.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\images\\recipes\\tpyvfh35.sgz.jpg",
       "PackagePath": "staticwebassets\\images\\recipes\\tpyvfh35.sgz.jpg"
     },
     {
       "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\images\\recipes\\xxhqzd3b.34d.jpg",
       "PackagePath": "staticwebassets\\images\\recipes\\xxhqzd3b.34d.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\le54hteq.4be.jpg",
-      "PackagePath": "staticwebassets\\le54hteq.4be.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\mzqecd01.dqq.jpg",
-      "PackagePath": "staticwebassets\\mzqecd01.dqq.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\oo0xtliq.b0e.jpg",
-      "PackagePath": "staticwebassets\\oo0xtliq.b0e.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\sfapwfzo.qrm.jpg",
-      "PackagePath": "staticwebassets\\sfapwfzo.qrm.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\tua5a5yn.5xi.jpg",
-      "PackagePath": "staticwebassets\\tua5a5yn.5xi.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\uiw3k0at.gis.jpg",
-      "PackagePath": "staticwebassets\\uiw3k0at.gis.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\yimtcn1p.ajp.jpg",
-      "PackagePath": "staticwebassets\\yimtcn1p.ajp.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\yzetu0rx.mzl.jpg",
-      "PackagePath": "staticwebassets\\yzetu0rx.mzl.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RecipeFinderApp.API.Microsoft.AspNetCore.StaticWebAssets.props",

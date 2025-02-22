@@ -10,22 +10,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "RecipeFinderApp.API.Controllers.AccountController",
-    "Method": "Verify",
-    "RelativePath": "api/Account/Verify",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "token",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "RecipeFinderApp.API.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/Login",
@@ -53,6 +37,22 @@
         "Name": "dto",
         "Type": "RecipeFinderApp.BL.DTOs.UserDTOs.RegisterDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecipeFinderApp.API.Controllers.AuthorizeController",
+    "Method": "Verify",
+    "RelativePath": "api/Authorize/Verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -222,7 +222,7 @@
         "IsRequired": false
       },
       {
-        "Name": "ImageUrl",
+        "Name": "File",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       },

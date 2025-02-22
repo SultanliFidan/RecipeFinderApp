@@ -29,6 +29,7 @@ namespace RecipeFinderApp.BL
             services.AddScoped<IUserFavoriteRecipeService, UserFavoriteRecipeService>();
             services.AddScoped<IJwtTokenHandler, JwtTokenHandler>();
             services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<IVerifyService, VerifyService>();
 
             return services;
         }

@@ -166,17 +166,24 @@ namespace RecipeFinderApp.BL.Services.Implements
             await _recipeRepository.SaveAsync();
         }
 
-        public async Task UpdateRecipe(int id,RecipeUpdateDto dto, string uploadPath)
+        public async Task UpdateRecipe(int id,RecipeUpdateDto dto, string destination)
         {
             var recipe = await _recipeRepository.GetByIdAsync(id, false);
             if (recipe == null) throw new NotFoundException<Recipe>();
 
             _mapper.Map(dto, recipe);
 
-            if (dto.ImageUrl != null && dto.ImageUrl.isValidType("image") && dto.ImageUrl.isValidSize(400))
+            if (destination != null)
             {
-                string fileName = await dto.ImageUrl.UploadAsync(uploadPath);
-                recipe.ImageUrl = Path.Combine("wwwroot", "recipes", fileName);
+                if (dto.File != null && dto.File.isValidType("image") && dto.File.isValidSize(400))
+                {
+                    var path = Path.Combine("wwwroot", "images", "recipes", recipe.ImageUrl);
+                    if (System.IO.File.Exists(path))
+                    {
+                        System.IO.File.Delete(path);
+                    }
+                    recipe.ImageUrl = await dto.File!.UploadAsync(destination, "images", "recipes");
+                }
             }
 
             await _recipeRepository.SaveAsync();
