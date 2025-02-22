@@ -161,7 +161,7 @@
       },
       {
         "Name": "PreparationTime",
-        "Type": "System.DateTime",
+        "Type": "System.Int32",
         "IsRequired": false
       },
       {
@@ -228,7 +228,7 @@
       },
       {
         "Name": "PreparationTime",
-        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
@@ -267,6 +267,27 @@
         "Name": "dto",
         "Type": "RecipeFinderApp.BL.DTOs.RecipeCommentDtos.RecipeCommentCreateDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecipeFinderApp.API.Controllers.RecipeController",
+    "Method": "Filter",
+    "RelativePath": "api/Recipe/Filter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "preparationTime",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ingredient",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

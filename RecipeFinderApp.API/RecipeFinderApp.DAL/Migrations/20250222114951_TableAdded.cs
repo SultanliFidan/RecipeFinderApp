@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RecipeFinderApp.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class AddedTable : Migration
+    public partial class TableAdded : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -182,7 +182,7 @@ namespace RecipeFinderApp.DAL.Migrations
                     Title = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: false),
                     Instruction = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    PreparationTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    PreparationTime = table.Column<int>(type: "int", nullable: false),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: true)

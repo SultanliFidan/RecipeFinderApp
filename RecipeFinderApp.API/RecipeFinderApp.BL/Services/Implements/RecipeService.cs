@@ -199,5 +199,34 @@ namespace RecipeFinderApp.BL.Services.Implements
 
             await _rating.SaveAsync(); 
         }
+
+        public async Task<IEnumerable<RecipeGetDto>> GetFilteredRecipe(int preparationTime, string ingredient)
+        {
+            var query = _recipeRepository.GetQuery(x => new RecipeGetDto
+            {
+                Id = x.Id,
+                Title = x.Title,
+                Instruction = x.Instruction,
+                PreparationTime = x.PreparationTime,
+                RecipeRatings = x.RecipeRatings.ToList(),
+                ImageUrl = x.ImageUrl,
+                UserId = x.UserId,
+                RecipeComments = x.RecipeComments,
+                Ingredients = x.RecipeIngredients.Select(x => x.Ingredient.Name).ToList()
+
+            }, true, false);
+
+            if (preparationTime > 0)
+            {
+                query = query.Where(x => x.PreparationTime == preparationTime);
+            }
+
+            if (!string.IsNullOrWhiteSpace(ingredient))
+            {
+                query = query.Where(x => x.Ingredients.Any(i => i.Contains(ingredient)));
+            }
+
+            return await query.ToListAsync();
+        }
     }
 }

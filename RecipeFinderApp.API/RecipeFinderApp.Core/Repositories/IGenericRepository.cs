@@ -11,7 +11,7 @@ namespace RecipeFinderApp.Core.Repositories
     public interface IGenericRepository<T> where T : BaseEntity, new()
     {
         Task AddAsync(T entity);
-        
+        IQueryable<U> GetQuery<U>(Expression<Func<T, U>> selector,bool includeDeleted = false,bool asNoTracking = true);
         void Delete(T  entity);
         Task DeleteAndSaveAsync(int id);
         Task DeleteAsync(int id);
@@ -21,7 +21,7 @@ namespace RecipeFinderApp.Core.Repositories
         Task<T?> GetByIdAsync(int id, bool asNoTrack = true, bool isDeleted = true);
         Task<U?> GetFirstAsync<U>(int id, Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = true);
         Task<IEnumerable<U>> GetWhereAsync<U>(Expression<Func<T, bool>> expression, Expression<Func<T, U>> select, bool asNoTrack = true, bool isDeleted = true);
-       
+        
         Task<bool> IsExistAsync(int id);
         Task<bool> IsExistAsync(Expression<Func<T, bool>> expression);
         void ReverseSoftDelete(T entity);

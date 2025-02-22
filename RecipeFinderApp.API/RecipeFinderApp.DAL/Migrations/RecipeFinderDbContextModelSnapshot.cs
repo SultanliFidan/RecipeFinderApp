@@ -203,8 +203,8 @@ namespace RecipeFinderApp.DAL.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("PreparationTime")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("PreparationTime")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()

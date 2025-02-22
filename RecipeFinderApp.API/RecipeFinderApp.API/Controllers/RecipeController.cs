@@ -17,7 +17,7 @@ namespace RecipeFinderApp.API.Controllers
     {
         
         [HttpPost]
-        //[Auth(Roles.Publisher)]
+        
         [Authorize(Roles = RoleConstants.Recipe)]
         public async Task<IActionResult> Create(RecipeCreateDto dto)
         {
@@ -32,6 +32,8 @@ namespace RecipeFinderApp.API.Controllers
             return Ok(recipes);
         }
         [HttpGet("{id}")]
+        [Authorize(Roles = RoleConstants.Recipe)]
+
         public async Task<IActionResult> GetById(int id)
         {
             var recipe = await _recipeService.GetByIdRecipe(id);
@@ -40,7 +42,8 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpPut("{id}")]
-        
+        [Authorize(Roles = RoleConstants.Recipe)]
+
         public async Task<IActionResult> Update(int id,RecipeUpdateDto dto)
         {
             string destination = _env.WebRootPath;
@@ -49,7 +52,8 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        //[Auth(Roles.Publisher)]
+        [Authorize(Roles = RoleConstants.Recipe)]
+
         public async Task<IActionResult> Delete(int id)
         {
             await _recipeService.DeleteRecipe(id);
@@ -57,7 +61,8 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpDelete("soft-delete/{id}")]
-        //[Auth(Roles.Publisher)]
+        [Authorize(Roles = RoleConstants.Recipe)]
+
         public async Task<IActionResult> SoftDelete(int id)
         {
             await _recipeService.SoftDeleteRecipe(id);
@@ -65,7 +70,8 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpPut("restore/{id}")]
-        //[Auth(Roles.Publisher)]
+        [Authorize(Roles = RoleConstants.Recipe)]
+
         public async Task<IActionResult> Restore(int id)
         {
             await _recipeService.RestoreRecipe(id);
@@ -73,7 +79,7 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpPost("[action]")]
-        //[Auth(Roles.Publisher | Roles.Viewer)]
+        
         [Authorize(Roles = RoleConstants.Recipe)]
         public async Task<IActionResult> Comment(RecipeCommentCreateDto dto)
         {
@@ -82,11 +88,18 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpPost("[action]")]
-        //[Auth(Roles.Publisher | Roles.Viewer)]
+        
         public async Task<IActionResult> Rate(int? recipeId, int rate = 1)
         {
             await _recipeService.Rate(recipeId,rate);
             return Ok();
         }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Filter(int preparationTime,string ingredient)
+        {
+            return Ok(await _recipeService.GetFilteredRecipe(preparationTime,ingredient));
+        }
+
     }
 }

@@ -21,9 +21,9 @@ namespace RecipeFinderApp.BL.Validators.RecipesValidators
             RuleFor(x => x.Instruction)
                 .NotEmpty()
                 .NotNull()
-                .WithMessage("Title cannot be empty")
+                .WithMessage("Instruction cannot be empty")
                 .MaximumLength(255)
-                .WithMessage("Title should be less than 255");
+                .WithMessage("Instruction should be less than 255");
             RuleFor(x => x.File)
                 .NotNull()
                 .NotEmpty()

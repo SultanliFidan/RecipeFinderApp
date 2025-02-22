@@ -12,8 +12,8 @@ using RecipeFinderApp.DAL.Context;
 namespace RecipeFinderApp.DAL.Migrations
 {
     [DbContext(typeof(RecipeFinderDbContext))]
-    [Migration("20250220140159_AddedTable")]
-    partial class AddedTable
+    [Migration("20250222114951_TableAdded")]
+    partial class TableAdded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -206,8 +206,8 @@ namespace RecipeFinderApp.DAL.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("PreparationTime")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("PreparationTime")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()

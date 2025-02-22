@@ -8,6 +8,7 @@ namespace RecipeFinderApp.API.Controllers
     [ApiController]
     public class AccountController(IEmailService _service) : ControllerBase
     {
+        
         [HttpPost("[action]")]
         public async Task<IActionResult> SendMail()
         {
