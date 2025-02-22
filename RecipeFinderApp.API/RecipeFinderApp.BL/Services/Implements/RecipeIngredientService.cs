@@ -36,7 +36,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                 Quantity = x.Quantity,
                 RecipeId = x.RecipeId,
                 IngredientId = x.IngredientId
-            },  false);
+            },  true, false,false);
 
             return recipeIngredients;
         }

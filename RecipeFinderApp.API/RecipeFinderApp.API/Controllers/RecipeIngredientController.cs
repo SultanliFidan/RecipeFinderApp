@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RecipeFinderApp.BL.DTOs.RecipeIngredientDTOs;
+using RecipeFinderApp.BL.Helpers;
 using RecipeFinderApp.BL.Services.Abstractions;
 
 namespace RecipeFinderApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = RoleConstants.Recipe)]
     public class RecipeIngredientController(IRecipeIngredientService _recipeIngredientService) : ControllerBase
     {
         [HttpPost]

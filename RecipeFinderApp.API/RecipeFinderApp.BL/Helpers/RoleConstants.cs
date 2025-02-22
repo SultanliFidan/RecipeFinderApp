@@ -9,5 +9,7 @@ namespace RecipeFinderApp.BL.Helpers;
 public class RoleConstants
 {
     public const string Recipe = "Publisher";
-    
+    public const string Comment = "Viewer,Publisher";
+   
+
 }

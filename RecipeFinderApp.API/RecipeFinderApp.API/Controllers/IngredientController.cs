@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RecipeFinderApp.BL.DTOs.IngredientDTOs;
+using RecipeFinderApp.BL.Helpers;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.BL.Services.Implements;
 
@@ -8,9 +10,12 @@ namespace RecipeFinderApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = RoleConstants.Recipe)]
+
     public class IngredientController(IIngredientService _ingredientService) : ControllerBase
     {
         [HttpPost]
+        
         public async Task<IActionResult> Create(IngredientCreateDto dto)
         {
             await _ingredientService.CreateIngredient(dto);
@@ -18,6 +23,7 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpGet]
+        
         public async Task<IActionResult> GetAll()
         {
             var ingredients = await _ingredientService.GetAll();

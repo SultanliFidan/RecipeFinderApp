@@ -26,13 +26,14 @@ namespace RecipeFinderApp.API.Controllers
             return Created();
         }
         [HttpGet]
+        [Authorize(Roles = RoleConstants.Comment)]
         public async Task<IActionResult> GetAll()
         {
             var recipes = await _recipeService.GetAllRecipe();
             return Ok(recipes);
         }
         [HttpGet("{id}")]
-        [Authorize(Roles = RoleConstants.Recipe)]
+        [Authorize(Roles = RoleConstants.Comment)]
 
         public async Task<IActionResult> GetById(int id)
         {
@@ -80,7 +81,7 @@ namespace RecipeFinderApp.API.Controllers
 
         [HttpPost("[action]")]
         
-        [Authorize(Roles = RoleConstants.Recipe)]
+        [Authorize(Roles = RoleConstants.Comment)]
         public async Task<IActionResult> Comment(RecipeCommentCreateDto dto)
         {
             await _recipeService.RecipeComment(dto);
@@ -88,7 +89,7 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpPost("[action]")]
-        
+        [Authorize(Roles = RoleConstants.Comment)]
         public async Task<IActionResult> Rate(int? recipeId, int rate = 1)
         {
             await _recipeService.Rate(recipeId,rate);
@@ -96,12 +97,14 @@ namespace RecipeFinderApp.API.Controllers
         }
 
         [HttpPost("[action]")]
+        [Authorize(Roles = RoleConstants.Comment)]
         public async Task<IActionResult> Filter(int? preparationTime,string? ingredient)
         {
             return Ok(await _recipeService.GetFilteredRecipe(preparationTime,ingredient));
         }
 
         [HttpPost("[action]")]
+        [Authorize(Roles = RoleConstants.Comment)]
         public async Task<IActionResult> Search(string title)
         {
             return Ok(await _recipeService.GetSearchedRecipe(title));

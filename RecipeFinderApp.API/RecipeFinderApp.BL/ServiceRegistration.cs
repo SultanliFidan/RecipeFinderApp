@@ -24,8 +24,6 @@ namespace RecipeFinderApp.BL
             services.AddScoped<IIngredientService, IngredientService>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IRecipeIngredientService, RecipeIngredientService>();
-            services.AddScoped<IRecipeCommentService, RecipeCommentService>();
-            services.AddScoped<IRecipeRatingService, RecipeRatingService>();
             services.AddScoped<IUserFavoriteRecipeService, UserFavoriteRecipeService>();
             services.AddScoped<IJwtTokenHandler, JwtTokenHandler>();
             services.AddScoped<IEmailService, EmailService>();

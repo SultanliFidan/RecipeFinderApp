@@ -18,7 +18,7 @@ namespace RecipeFinderApp.DAL.Configurations
                 .HasMaxLength(32);
             builder.Property( x => x.Instruction)
                 .IsRequired()
-                .HasMaxLength(255);
+                .HasMaxLength(1000);
             builder.Property(x => x.ImageUrl)
                .IsRequired()
                .HasMaxLength(255);

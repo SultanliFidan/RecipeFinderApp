@@ -14,7 +14,6 @@ namespace RecipeFinderApp.BL.Profiles
         public UserFavoriteRecipeProfile()
         {
             CreateMap<UserFavoriteRecipeCreateDto, UserFavoriteRecipe>();
-            CreateMap<UserFavoriteRecipeUpdateDto, UserFavoriteRecipe>();
             CreateMap<UserFavoriteRecipe, UserFavoriteRecipeGetDto>();
         }
     }

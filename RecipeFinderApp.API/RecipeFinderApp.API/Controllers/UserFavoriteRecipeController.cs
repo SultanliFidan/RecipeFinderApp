@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RecipeFinderApp.BL.DTOs.UserFavoriteRecipeDTOs;
+using RecipeFinderApp.BL.Helpers;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.BL.Services.Implements;
 
@@ -8,6 +10,7 @@ namespace RecipeFinderApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = RoleConstants.Comment)]
     public class UserFavoriteRecipeController(IUserFavoriteRecipeService _userFavoriteRecipeService) : ControllerBase
     {
         [HttpPost]
