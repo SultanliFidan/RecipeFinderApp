@@ -22,13 +22,13 @@ namespace RecipeFinderApp.DAL.Configurations
                 .HasForeignKey(r => r.CommentId)
                 .OnDelete(DeleteBehavior.NoAction);
 
-            builder.HasOne(r => r.User) // Report yazan user
-            .WithMany(u => u.ReportsWritten) // İstifadəçinin verdiyi reportlar
+            builder.HasOne(r => r.User) 
+            .WithMany(u => u.ReportsWritten) 
             .HasForeignKey(r => r.UserId)
-            .OnDelete(DeleteBehavior.Restrict); // İstifadəçi silindikdə report-lar silinməsin
+            .OnDelete(DeleteBehavior.Restrict); 
 
-            builder.HasOne(r => r.ReportedUser) // Report olunan user
-                .WithMany(u => u.ReportsReceived) // İstifadəçinin report olunduğu hallar
+            builder.HasOne(r => r.ReportedUser) 
+                .WithMany(u => u.ReportsReceived) 
                 .HasForeignKey(r => r.ReportedUserId)
                 .OnDelete(DeleteBehavior.Restrict);
         }

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using RecipeFinderApp.BL.DTOs.UserFavoriteRecipeDTOs;
 using RecipeFinderApp.BL.Exceptioins.Common;
 using RecipeFinderApp.BL.Exceptioins.UserException;
+using RecipeFinderApp.BL.ExternalServices.Abstractions;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Entities;
 using RecipeFinderApp.Core.Repositories;
@@ -15,12 +16,11 @@ using System.Threading.Tasks;
 
 namespace RecipeFinderApp.BL.Services.Implements
 {
-    public class UserFavoriteRecipeService(IHttpContextAccessor _httpContext,IMapper _mapper, IGenericRepository<UserFavoriteRecipe> _favoriteRepository) : IUserFavoriteRecipeService
+    public class UserFavoriteRecipeService(ICurrentUser _currentUser,IHttpContextAccessor _httpContext,IMapper _mapper, IGenericRepository<UserFavoriteRecipe> _favoriteRepository) : IUserFavoriteRecipeService
     {
         public async Task CreateUserFavoriteRecipe(UserFavoriteRecipeCreateDto dto)
         {
-            string? userId = _httpContext.HttpContext?.User?.Claims
-          .FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+            string? userId = _currentUser.GetId();
 
             if (string.IsNullOrEmpty(userId))
                 throw new AuthorizationException("User is not authenticated!");

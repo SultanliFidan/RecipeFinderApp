@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace RecipeFinderApp.BL.Services.Implements
 {
-    public class AuthService(IJwtTokenHandler _tokenHandler,UserManager<User> _userManager,SignInManager<User> _signInManager,RoleManager<IdentityRole> _roleManager,IMapper _mapper) : IAuthService
+    public class AuthService(IEmailService _emailService,IJwtTokenHandler _tokenHandler,UserManager<User> _userManager,SignInManager<User> _signInManager,RoleManager<IdentityRole> _roleManager,IMapper _mapper) : IAuthService
     {
         public async Task<string> LoginAsync(LoginDto dto)
         {
@@ -76,6 +76,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                 throw new RoleAssignmentException();
             }
 
+            await _emailService.SendEmailAsync("confirmation", dto.Email, null);
            
         }
     }

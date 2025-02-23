@@ -20,8 +20,8 @@ namespace RecipeFinderApp.BL
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             
-            services.AddScoped<IRecipeService, RecipeService>();
             services.AddScoped<IIngredientService, IngredientService>();
+            services.AddScoped<IRecipeService, RecipeService>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IRecipeIngredientService, RecipeIngredientService>();
             services.AddScoped<IUserFavoriteRecipeService, UserFavoriteRecipeService>();
@@ -30,6 +30,7 @@ namespace RecipeFinderApp.BL
             services.AddScoped<IVerifyService, VerifyService>();
             services.AddScoped<IPasswordService, PasswordService>();
             services.AddScoped<IReportService, ReportService>();
+            services.AddScoped<ICurrentUser, CurrentUser>();
 
             return services;
         }

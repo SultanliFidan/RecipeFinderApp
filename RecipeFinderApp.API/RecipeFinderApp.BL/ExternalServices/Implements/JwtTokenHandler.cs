@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using RecipeFinderApp.BL.Constants;
 using RecipeFinderApp.BL.DTOs.Options;
 using RecipeFinderApp.BL.ExternalServices.Abstractions;
 using RecipeFinderApp.Core.Entities;

@@ -15,7 +15,7 @@ namespace RecipeFinderApp.DAL.Configurations
         {
             builder.HasOne(x => x.Recipe)
                .WithMany(c => c.RecipeRatings)
-               .HasForeignKey(x => x.RecipeId); ;
+               .HasForeignKey(x => x.RecipeId); 
             builder.HasOne(x => x.User)
                 .WithMany(c => c.RecipeRatings)
                 .HasForeignKey(x => x.UserId); ;

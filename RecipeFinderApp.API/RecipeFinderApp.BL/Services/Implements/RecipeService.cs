@@ -1,13 +1,14 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-using RecipeFinderApp.BL.Constants;
+
 using RecipeFinderApp.BL.DTOs.RecipeCommentDtos;
 using RecipeFinderApp.BL.DTOs.RecipeDTOs;
 using RecipeFinderApp.BL.DTOs.RecipeRatingDTOs;
 using RecipeFinderApp.BL.Exceptioins.Common;
 using RecipeFinderApp.BL.Exceptioins.UserException;
 using RecipeFinderApp.BL.Extensions;
+using RecipeFinderApp.BL.ExternalServices.Abstractions;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Entities;
 using RecipeFinderApp.Core.Enums;
@@ -23,15 +24,12 @@ using System.Threading.Tasks;
 
 namespace RecipeFinderApp.BL.Services.Implements
 {
-    public class RecipeService(IMapper _mapper, IGenericRepository<Recipe> _recipeRepository, 
-        IRecipeCommentRepository _comment, IHttpContextAccessor _httpContext, RecipeFinderDbContext _context,IRecipeRatingRepository _rating) : IRecipeService
+    public class RecipeService(ICurrentUser _currentUser,IMapper _mapper, IGenericRepository<Recipe> _recipeRepository, 
+        IRecipeCommentRepository _comment, RecipeFinderDbContext _context,IRecipeRatingRepository _rating) : IRecipeService
     {
         public async Task CreateRecipe(RecipeCreateDto dto, string destination)
         {
-
-
-            string? userId = _httpContext.HttpContext?.User?.Claims
-           .FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+            string? userId = _currentUser.GetId();
 
             if (string.IsNullOrEmpty(userId))
                 throw new AuthorizationException("User is not authenticated!");
@@ -199,7 +197,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                     throw new NotFoundException<RecipeComment>();
             }
             var entity = _mapper.Map<RecipeComment>(dto);
-            entity.UserId = _httpContext.HttpContext?.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+            entity.UserId = _currentUser.GetId();
             entity.RecipeId = parent?.RecipeId ?? dto.RecipeId;
             await _comment.AddAsync(entity);
             await _comment.SaveAsync();
@@ -210,7 +208,7 @@ namespace RecipeFinderApp.BL.Services.Implements
             if (!recipeId.HasValue)
                 throw new Exception();
 
-            var userId = _httpContext.HttpContext?.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)!.Value;
+            var userId = _currentUser.GetId();
             
 
             if (!await _context.Recipes.AnyAsync(x => x.Id == recipeId))

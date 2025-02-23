@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Options;
 using Microsoft.SqlServer.Server;
-using RecipeFinderApp.BL.Constants;
 using RecipeFinderApp.BL.DTOs.Options;
 using RecipeFinderApp.BL.DTOs.UserDTOs;
 using RecipeFinderApp.BL.Services.Abstractions;

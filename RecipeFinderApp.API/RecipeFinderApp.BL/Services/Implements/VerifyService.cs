@@ -4,6 +4,7 @@ using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Options;
 using RecipeFinderApp.BL.DTOs.Options;
 using RecipeFinderApp.BL.Exceptions.UserException;
+using RecipeFinderApp.BL.ExternalServices.Abstractions;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Entities;
 using RecipeFinderApp.Core.Enums;
@@ -22,22 +23,21 @@ namespace RecipeFinderApp.BL.Services.Implements
     {
         private readonly UserManager<User> _userManager;
         private readonly IMemoryCache _cache;
-        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly ICurrentUser _currentUser;
         
         private readonly RecipeFinderDbContext _context;
         
         public VerifyService(IOptions<EmailOptions> options, RecipeFinderDbContext context,
-                            UserManager<User> userManager, IMemoryCache cache,
-                            IHttpContextAccessor httpContextAccessor)
+                UserManager<User> userManager, IMemoryCache cache, ICurrentUser currentUser)
         {
             _cache = cache;
-            _httpContextAccessor = httpContextAccessor;
             _userManager = userManager;
             _context = context;
+            _currentUser = currentUser;
         }
         public async Task Verify(string userToken)
         {
-            string? name = _httpContextAccessor.HttpContext?.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value;
+            string? name = _currentUser.GetName();
             var cacheToken = _cache.Get<string>(name);
             if (string.IsNullOrEmpty(userToken) || string.IsNullOrEmpty(cacheToken) || string.IsNullOrEmpty(name))
                 throw new TokenVerificationException();
