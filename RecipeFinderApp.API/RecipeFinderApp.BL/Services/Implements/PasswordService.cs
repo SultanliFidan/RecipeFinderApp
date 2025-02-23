@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using RecipeFinderApp.BL.DTOs.UserDTOs;
+using RecipeFinderApp.BL.Exceptions.UserException;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Entities;
 using System;
@@ -15,7 +16,7 @@ namespace RecipeFinderApp.BL.Services.Implements
         public async Task ForgotPasswordAsync(string email)
         {
             var user = await _userManager.FindByEmailAsync(email);
-            if (user == null) throw new Exception("Unknown user.");
+            if (user == null) throw new UserNotFoundException();
 
             var token = await _userManager.GeneratePasswordResetTokenAsync(user);
 
@@ -25,24 +26,24 @@ namespace RecipeFinderApp.BL.Services.Implements
         public async Task ResetPasswordAsync(ResetPasswordDto dto)
         {
             var user = await _userManager.FindByEmailAsync(dto.Email);
-            if (user == null) throw new Exception("Unknown user.");
+            if (user == null) throw new UserNotFoundException();
 
             var result = await _userManager.ResetPasswordAsync(user, dto.Token, dto.NewPassword);
             if (!result.Succeeded)
             {
-                throw new Exception("Unsuccessful reset password.");
+                throw new PasswordResetFailedException();
             }
         }
 
         public async Task ChangePasswordAsync(ChangePasswordDto dto)
         {
             var user = await _userManager.FindByEmailAsync(dto.Email);
-            if (user == null) throw new Exception("Unknown user.");
+            if (user == null) throw new UserNotFoundException();
 
             var result = await _userManager.ChangePasswordAsync(user, dto.OldPassword, dto.NewPassword);
             if (!result.Succeeded)
             {
-                throw new Exception("Unsuccessful change password.");
+                throw new ChangePasswordFailedException();
             }
         }
     }

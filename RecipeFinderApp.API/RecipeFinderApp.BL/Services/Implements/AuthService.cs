@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using RecipeFinderApp.BL.DTOs.UserDTOs;
+using RecipeFinderApp.BL.Exceptions.UserException;
 using RecipeFinderApp.BL.ExternalServices.Abstractions;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Entities;
@@ -18,7 +19,7 @@ namespace RecipeFinderApp.BL.Services.Implements
         public async Task<string> LoginAsync(LoginDto dto)
         {
             if (dto == null)
-                throw new Exception("Invalid login request.");
+                throw new InvalidLoginRequestException();
 
             User? user = null;
 
@@ -28,7 +29,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                 user = await _userManager.FindByNameAsync(dto.UsernameOrEmail);
 
             if (user == null)
-                throw new Exception("User not found. Please confirm your account.");
+                throw new UserNotFoundException("User not found. Please confirm your account.");
 
             var result = await _signInManager.PasswordSignInAsync(user, dto.Password, dto.RememberMe, true);
 
@@ -36,15 +37,15 @@ namespace RecipeFinderApp.BL.Services.Implements
             {
                 if (result.IsLockedOut)
                 {
-                    throw new Exception($"Your account is locked. Please wait until {user.LockoutEnd!.Value:yyyy-MMM-dd HH:mm:ss}.");
+                    throw new AccountLockedException(user.LockoutEnd!.Value);
                 }
 
                 if (result.IsNotAllowed)
                 {
-                    throw new Exception("Username or password is incorrect.");
+                    throw new LoginFailedException("Username or password is incorrect.");
                 }
 
-                throw new Exception("Login failed.");
+                throw new LoginFailedException();
             }
 
 
@@ -57,7 +58,7 @@ namespace RecipeFinderApp.BL.Services.Implements
             var existingUser = await _userManager.FindByEmailAsync(dto.Email);
             if (existingUser != null)
             {
-                throw new Exception("User already exists with this email.");
+                throw new UserAlreadyExistsException();
             }
 
             User user = _mapper.Map<User>(dto);
@@ -66,13 +67,13 @@ namespace RecipeFinderApp.BL.Services.Implements
 
             if (!result.Succeeded)
             {
-                throw new Exception("User creation failed.");
+                throw new UserCreationException();
             }
 
             var roleResult = await _userManager.AddToRoleAsync(user, nameof(Roles.Viewer));
             if (!roleResult.Succeeded)
             {
-                throw new Exception("Role assignment failed.");
+                throw new RoleAssignmentException();
             }
 
            

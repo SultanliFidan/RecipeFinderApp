@@ -73,7 +73,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                 client.UseDefaultCredentials = false;
                 MailAddress to = new MailAddress(email);
                 MailMessage message = new(_from, to);
-                message.Subject = "Recipe Finder";
+                message.Subject = "Reset Password";
                 if (reason == "confirmation")
                     message.Body = $"Hi, confirmation token: {token}";
                 else if (reason == "forgotPassword")
