@@ -2,19 +2,20 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RecipeFinderApp.BL.DTOs.ReportDTOs;
+using RecipeFinderApp.BL.Helpers;
 using RecipeFinderApp.BL.Services.Abstractions;
 using System.Security.Claims;
 
 namespace RecipeFinderApp.API.Controllers
 {
-    [Authorize]
+    
     [Route("api/reports")]
     [ApiController]
     public class ReportsController(IReportService _service) : ControllerBase
     {
-      
 
-        // ✅ Yeni report əlavə edir
+
+        [Authorize(Roles = RoleConstants.Recipe)]
         [HttpPost]
         public async Task<IActionResult> CreateReport([FromBody] ReportDto reportDto)
         {
@@ -23,10 +24,10 @@ namespace RecipeFinderApp.API.Controllers
                 return Unauthorized();
 
             await _service.AddReportAsync(reportDto, userId);
-            return Ok(new { message = "Report successfully submitted." });
+            return Ok("Report successfully submitted.");
         }
 
-        // ✅ İstifadəçinin neçə dəfə report olunduğunu qaytarır
+        [Authorize(Roles = RoleConstants.Recipe)]
         [HttpGet("user/{reportedUserId}")]
         public async Task<IActionResult> GetReportCount(string reportedUserId)
         {
