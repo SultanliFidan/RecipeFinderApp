@@ -18,5 +18,6 @@ namespace RecipeFinderApp.Core.Entities
         public int? ParentId { get; set; }
         public RecipeComment? Parent { get; set; }
         public IEnumerable<RecipeComment>? Children { get; set; }
+        public ICollection<Report> Reports { get; set; } 
     }
 }

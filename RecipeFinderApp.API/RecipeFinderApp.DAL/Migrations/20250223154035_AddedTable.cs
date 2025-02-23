@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace RecipeFinderApp.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class TableAdded : Migration
+    public partial class AddedTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -180,7 +180,7 @@ namespace RecipeFinderApp.DAL.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: false),
-                    Instruction = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    Instruction = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
                     PreparationTime = table.Column<int>(type: "int", nullable: false),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
@@ -311,6 +311,41 @@ namespace RecipeFinderApp.DAL.Migrations
                         principalColumn: "Id");
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Reports",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CommentId = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ReportedUserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Reason = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Reports", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Reports_AspNetUsers_ReportedUserId",
+                        column: x => x.ReportedUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Reports_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Reports_RecipeComments_CommentId",
+                        column: x => x.CommentId,
+                        principalTable: "RecipeComments",
+                        principalColumn: "Id");
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -391,6 +426,21 @@ namespace RecipeFinderApp.DAL.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Reports_CommentId",
+                table: "Reports",
+                column: "CommentId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Reports_ReportedUserId",
+                table: "Reports",
+                column: "ReportedUserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Reports_UserId",
+                table: "Reports",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_UserFavoriteRecipes_RecipeId",
                 table: "UserFavoriteRecipes",
                 column: "RecipeId");
@@ -420,13 +470,13 @@ namespace RecipeFinderApp.DAL.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "RecipeComments");
-
-            migrationBuilder.DropTable(
                 name: "RecipeIngredients");
 
             migrationBuilder.DropTable(
                 name: "RecipeRatings");
+
+            migrationBuilder.DropTable(
+                name: "Reports");
 
             migrationBuilder.DropTable(
                 name: "UserFavoriteRecipes");
@@ -436,6 +486,9 @@ namespace RecipeFinderApp.DAL.Migrations
 
             migrationBuilder.DropTable(
                 name: "Ingredients");
+
+            migrationBuilder.DropTable(
+                name: "RecipeComments");
 
             migrationBuilder.DropTable(
                 name: "Recipes");

@@ -489,6 +489,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RecipeFinderApp.API.Controllers.ReportsController",
+    "Method": "CreateReport",
+    "RelativePath": "api/reports",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportDto",
+        "Type": "RecipeFinderApp.BL.DTOs.ReportDTOs.ReportDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecipeFinderApp.API.Controllers.ReportsController",
+    "Method": "GetReportCount",
+    "RelativePath": "api/reports/user/{reportedUserId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportedUserId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RecipeFinderApp.API.Controllers.UserFavoriteRecipeController",
     "Method": "Create",
     "RelativePath": "api/UserFavoriteRecipe",

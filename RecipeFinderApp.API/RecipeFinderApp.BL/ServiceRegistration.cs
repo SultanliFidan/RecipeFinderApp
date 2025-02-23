@@ -29,6 +29,7 @@ namespace RecipeFinderApp.BL
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<IVerifyService, VerifyService>();
             services.AddScoped<IPasswordService, PasswordService>();
+            services.AddScoped<IReportService, ReportService>();
 
             return services;
         }

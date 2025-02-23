@@ -197,8 +197,8 @@ namespace RecipeFinderApp.DAL.Migrations
 
                     b.Property<string>("Instruction")
                         .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -325,6 +325,47 @@ namespace RecipeFinderApp.DAL.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("RecipeRatings");
+                });
+
+            modelBuilder.Entity("RecipeFinderApp.Core.Entities.Report", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CommentId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Reason")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("ReportedUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CommentId");
+
+                    b.HasIndex("ReportedUserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Reports");
                 });
 
             modelBuilder.Entity("RecipeFinderApp.Core.Entities.User", b =>
@@ -548,6 +589,33 @@ namespace RecipeFinderApp.DAL.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("RecipeFinderApp.Core.Entities.Report", b =>
+                {
+                    b.HasOne("RecipeFinderApp.Core.Entities.RecipeComment", "Comment")
+                        .WithMany("Reports")
+                        .HasForeignKey("CommentId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("RecipeFinderApp.Core.Entities.User", "ReportedUser")
+                        .WithMany("ReportsReceived")
+                        .HasForeignKey("ReportedUserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("RecipeFinderApp.Core.Entities.User", "User")
+                        .WithMany("ReportsWritten")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Comment");
+
+                    b.Navigation("ReportedUser");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("RecipeFinderApp.Core.Entities.UserFavoriteRecipe", b =>
                 {
                     b.HasOne("RecipeFinderApp.Core.Entities.Recipe", "Recipe")
@@ -586,6 +654,8 @@ namespace RecipeFinderApp.DAL.Migrations
             modelBuilder.Entity("RecipeFinderApp.Core.Entities.RecipeComment", b =>
                 {
                     b.Navigation("Children");
+
+                    b.Navigation("Reports");
                 });
 
             modelBuilder.Entity("RecipeFinderApp.Core.Entities.User", b =>
@@ -595,6 +665,10 @@ namespace RecipeFinderApp.DAL.Migrations
                     b.Navigation("RecipeRatings");
 
                     b.Navigation("Recipes");
+
+                    b.Navigation("ReportsReceived");
+
+                    b.Navigation("ReportsWritten");
 
                     b.Navigation("UserFavoriteRecipes");
                 });

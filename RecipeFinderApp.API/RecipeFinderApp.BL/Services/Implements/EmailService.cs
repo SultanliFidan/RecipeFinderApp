@@ -57,7 +57,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                 if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(name))
                     throw new UnauthorizedAccessException("User is not authenticated");
 
-                _cache.Set(email, token, TimeSpan.FromMinutes(30));
+                _cache.Set(name, token, TimeSpan.FromMinutes(30));
 
             }
             else if (reason == "forgotPassword")

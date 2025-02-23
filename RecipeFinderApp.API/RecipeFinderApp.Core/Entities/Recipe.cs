@@ -10,7 +10,7 @@ namespace RecipeFinderApp.Core.Entities
     public class Recipe : BaseEntity
     {
         public string Title { get; set; }
-        //public string Comment { get; set; }
+        
         public string Instruction { get; set; }
         public string ImageUrl { get; set; }
         public int PreparationTime { get; set; }

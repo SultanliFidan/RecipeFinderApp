@@ -16,5 +16,8 @@ namespace RecipeFinderApp.Core.Entities
         public ICollection<RecipeComment>? RecipeComments { get; set; }
         public ICollection<RecipeRating>? RecipeRatings { get; set; }
         public ICollection<UserFavoriteRecipe>? UserFavoriteRecipes { get; set; }
+        public ICollection<Report> ReportsWritten { get; set; }  
+        public ICollection<Report> ReportsReceived { get; set; }
     }
 }
+

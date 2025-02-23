@@ -21,7 +21,7 @@ namespace RecipeFinderApp.DAL
             services.AddScoped<IRecipeRatingRepository, RecipeRatingRepository>();
             services.AddScoped<IRecipeRepository, RecipeRepository>();
             services.AddScoped<IUserFavoriteRecipeRepository, UserFavoriteRecipeRepository>();
-           
+            services.AddScoped<IReportRepository, ReportRepository>();
             return services;
         }
     }

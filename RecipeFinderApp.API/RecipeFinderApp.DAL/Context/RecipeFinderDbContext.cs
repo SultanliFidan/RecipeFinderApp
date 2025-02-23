@@ -18,6 +18,7 @@ namespace RecipeFinderApp.DAL.Context
         public DbSet<RecipeComment> RecipeComments { get; set; }
         public DbSet<RecipeRating> RecipeRatings { get; set; }
         public DbSet<UserFavoriteRecipe> UserFavoriteRecipes { get; set; }
+        public DbSet<Report> Reports { get; set; }
 
         public RecipeFinderDbContext(DbContextOptions opt) : base(opt)
         {
