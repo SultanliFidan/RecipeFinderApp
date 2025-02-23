@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using RecipeFinderApp.BL.Constants;
 using RecipeFinderApp.BL.DTOs.RecipeCommentDtos;
 using RecipeFinderApp.BL.DTOs.RecipeDTOs;
-
+using RecipeFinderApp.BL.DTOs.RecipeRatingDTOs;
 using RecipeFinderApp.BL.Exceptioins.Common;
 using RecipeFinderApp.BL.Exceptioins.UserException;
 using RecipeFinderApp.BL.Extensions;

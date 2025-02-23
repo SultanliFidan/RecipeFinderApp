@@ -137,6 +137,54 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RecipeFinderApp.API.Controllers.PasswordController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Password/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RecipeFinderApp.BL.DTOs.UserDTOs.ChangePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecipeFinderApp.API.Controllers.PasswordController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Password/ForgotPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RecipeFinderApp.API.Controllers.PasswordController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Password/ResetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RecipeFinderApp.BL.DTOs.UserDTOs.ResetPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RecipeFinderApp.API.Controllers.RecipeController",
     "Method": "Create",
     "RelativePath": "api/Recipe",

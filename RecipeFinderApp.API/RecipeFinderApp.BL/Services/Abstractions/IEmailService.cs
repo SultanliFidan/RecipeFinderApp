@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using RecipeFinderApp.BL.DTOs.UserDTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +10,8 @@ namespace RecipeFinderApp.BL.Services.Abstractions
 {
     public interface IEmailService
     {
-        Task SendEmail();
-        
+        Task SendEmailAsync(string reason, string? email, string? forgotToken);
+
+
     }
 }

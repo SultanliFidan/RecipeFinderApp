@@ -10,6 +10,6 @@ namespace RecipeFinderApp.Core.Enums
     {
         Viewer = 1,
         Publisher = 2,
-        Admin = 3
+        Admin = Publisher | Viewer
     }
 }
