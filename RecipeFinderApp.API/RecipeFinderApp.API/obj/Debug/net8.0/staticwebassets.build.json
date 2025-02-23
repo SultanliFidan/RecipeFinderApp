@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VvW35uItl4AP9NkOHmBGGgApmKOKwTu/ASjIlr1xJso=",
+  "Hash": "FSmrjfcl+nrJ7xz4nKIHl7cIK1boQGHb4LVYxqOPSZw=",
   "Source": "RecipeFinderApp.API",
   "BasePath": "_content/RecipeFinderApp.API",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\recipes\\m2agngsf.xyq.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\images\\recipes\\ozvhn3mp.z5k.jpg",
+      "SourceId": "RecipeFinderApp.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\",
+      "BasePath": "_content/RecipeFinderApp.API",
+      "RelativePath": "images/recipes/ozvhn3mp.z5k.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\recipes\\ozvhn3mp.z5k.jpg"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\wwwroot\\images\\recipes\\tpyvfh35.sgz.jpg",

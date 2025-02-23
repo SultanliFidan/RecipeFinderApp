@@ -1,9 +1,11 @@
-﻿using Microsoft.Extensions.Options;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using RecipeFinderApp.BL.Constants;
 using RecipeFinderApp.BL.DTOs.Options;
 using RecipeFinderApp.BL.ExternalServices.Abstractions;
 using RecipeFinderApp.Core.Entities;
+using RecipeFinderApp.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -17,19 +19,24 @@ namespace RecipeFinderApp.BL.ExternalServices.Implements
     public class JwtTokenHandler : IJwtTokenHandler
     {
         readonly JwtOptions opt;
-        public JwtTokenHandler(IOptions<JwtOptions> _opt)
+        readonly UserManager<User> userManager;
+        public JwtTokenHandler(IOptions<JwtOptions> _opt,UserManager<User> _userManager)
         {
+            userManager = _userManager;
             opt = _opt.Value;
         }
-        public string CreateToken(User user, int hours = 36)
+        public async Task<string> CreateToken(User user, int hours = 36)
         {
+            var roles = await userManager.GetRolesAsync(user);
+            var role = roles.FirstOrDefault();
             List<Claim> claims = [
-            new Claim(ClaimTypes.Name, user.UserName),
+                new Claim(ClaimTypes.Name, user.Fullname),
             new Claim(ClaimTypes.Email, user.Email),
-           //new Claim(ClaimTypes.Role,user.Role.ToString()),
-            new Claim(ClaimTypes.NameIdentifier,user.Id.ToString()),
-            //new Claim(ClaimTypes.FullName,user.Fullname)
-            ];
+            new Claim(ClaimTypes.NameIdentifier, user.Id),
+            new Claim(ClaimTypes.Role, role),
+        ];
+
+            
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(opt.SecretKey));
             SigningCredentials cred = new(key, SecurityAlgorithms.HmacSha256);
             JwtSecurityToken secToken = new(

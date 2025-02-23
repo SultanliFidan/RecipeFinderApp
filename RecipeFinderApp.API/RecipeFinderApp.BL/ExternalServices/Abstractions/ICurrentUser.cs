@@ -9,11 +9,11 @@ namespace RecipeFinderApp.BL.ExternalServices.Abstractions
 {
     public interface ICurrentUser
     {
-        int GetId();
-        //string GetUserName();
+        string GetId();
+        string GetUserName();
         string GetEmail();
-        //string GetFullname();
+        string GetName();
         int GetRole();
-        //Task<UserGetDto> GetUserAsync();
+        Task<UserGetDto> GetUserAsync();
     }
 }

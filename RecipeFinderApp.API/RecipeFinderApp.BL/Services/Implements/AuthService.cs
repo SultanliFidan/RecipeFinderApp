@@ -49,9 +49,9 @@ namespace RecipeFinderApp.BL.Services.Implements
             }
 
 
-            return _tokenHandler.CreateToken(user, 36);
+            return await _tokenHandler.CreateToken(user, 36);
 
-                    }
+        }
 
         public async Task RegisterAsync(RegisterDto dto)
         {
