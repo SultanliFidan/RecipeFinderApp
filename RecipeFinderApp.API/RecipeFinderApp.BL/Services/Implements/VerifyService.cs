@@ -37,15 +37,15 @@ namespace RecipeFinderApp.BL.Services.Implements
         }
         public async Task Verify(string userToken)
         {
-            string? name = _currentUser.GetName();
-            var cacheToken = _cache.Get<string>(name);
-            if (string.IsNullOrEmpty(userToken) || string.IsNullOrEmpty(cacheToken) || string.IsNullOrEmpty(name))
+            string? email = _currentUser.GetEmail();
+            var cacheToken = _cache.Get<string>(email);
+            if (string.IsNullOrEmpty(userToken) || string.IsNullOrEmpty(cacheToken) || string.IsNullOrEmpty(email))
                 throw new TokenVerificationException();
 
             if (cacheToken != userToken)
                 throw new TokenVerificationException();
 
-            User? user = await _userManager.FindByNameAsync(name);
+            User? user = await _userManager.FindByEmailAsync(email);
             string role = nameof(Roles.Publisher);
             var currentRoles = await _userManager.GetRolesAsync(user);
 
@@ -56,6 +56,7 @@ namespace RecipeFinderApp.BL.Services.Implements
             {
                 throw new RoleAssignmentException();
             }
+            
             await _context.SaveChangesAsync();
         }
     }

@@ -1,4 +1,5 @@
 ﻿using RecipeFinderApp.BL.DTOs.RecipeCommentDtos;
+using RecipeFinderApp.BL.DTOs.RecipeRatingDTOs;
 using RecipeFinderApp.Core.Entities;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ namespace RecipeFinderApp.BL.DTOs.RecipeDTOs
         public int PreparationTime { get; set; }
         public string UserId { get; set; }
         public ICollection<RecipeCommentGetDto> RecipeComments { get; set; }
-        public ICollection<RecipeRating>? RecipeRatings { get; set; }
+        public ICollection<RatingGetDto>? RecipeRatings { get; set; }
         public List<string> Ingredients { get; set; } 
     }
 }

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using RecipeFinderApp.BL.DTOs.RecipeCommentDtos;
 using RecipeFinderApp.BL.DTOs.RecipeDTOs;
 using RecipeFinderApp.BL.DTOs.RecipeRatingDTOs;
+using RecipeFinderApp.BL.DTOs.UserDTOs;
 using RecipeFinderApp.BL.Exceptioins.Common;
 using RecipeFinderApp.BL.Exceptioins.UserException;
 using RecipeFinderApp.BL.Extensions;
@@ -68,7 +69,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                 Instruction = x.Instruction,
                 ImageUrl = x.ImageUrl,
                 PreparationTime = x.PreparationTime,
-                RecipeComments = x.RecipeComments.Where(x => x.ParentId == null).Select(x => new RecipeCommentGetDto
+                RecipeComments = x.RecipeComments.Where(x => x.ParentId == null && !x.IsDeleted).Select(x => new RecipeCommentGetDto
                 {
                     Comment = x.Comment,
                     Id = x.Id,
@@ -79,9 +80,30 @@ namespace RecipeFinderApp.BL.Services.Implements
                         Id = x.Id,
                         ParentId = x.ParentId
                     })
-                   
+
                 }).ToList(),
-                RecipeRatings = x.RecipeRatings,
+                RecipeRatings = x.RecipeRatings
+                .Where(r => !r.IsDeleted)
+                .Select(r => new RatingGetDto
+                {
+                    Id = r.Id,
+                    RatingRate = r.RatingRate,
+                    UserId = r.UserId,
+                    RecipeId = r.RecipeId,
+                    User = new UserGetDto
+                    {
+                        Id = r.User.Id,
+                        Fullname = r.User.UserName,
+                        ProfileImageUrl = r.User.ProfileImageUrl
+                    },
+                    Recipe = new RecipeBasicDto
+                    {
+                        Id = r.Recipe.Id,
+                        Title = r.Recipe.Title
+                    }
+                }).ToList(), 
+            
+               
                 UserId = x.UserId,
                 Ingredients = x.RecipeIngredients.Select(x => x.Ingredient.Name).ToList()
             }, false,true,true);
@@ -116,6 +138,25 @@ namespace RecipeFinderApp.BL.Services.Implements
 
                 }).ToList(),
                 RecipeRatings = x.RecipeRatings
+                .Where(r => !r.IsDeleted)
+                .Select(r => new RatingGetDto
+                {
+                    Id = r.Id,
+                    RatingRate = r.RatingRate,
+                    UserId = r.UserId,
+                    RecipeId = r.RecipeId,
+                    User = new UserGetDto
+                    {
+                        Id = r.User.Id,
+                        Fullname = r.User.UserName,
+                        ProfileImageUrl = r.User.ProfileImageUrl
+                    },
+                    Recipe = new RecipeBasicDto
+                    {
+                        Id = r.Recipe.Id,
+                        Title = r.Recipe.Title
+                    }
+                }).ToList()
             },
         isDeleted: true);
 
@@ -132,7 +173,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                 ImageUrl = x.ImageUrl,
                 PreparationTime = x.PreparationTime,
                 UserId = x.UserId,
-                RecipeComments = x.RecipeComments.Where(x => x.ParentId == null).Select(x => new RecipeCommentGetDto
+                RecipeComments = x.RecipeComments.Where(x => x.ParentId == null && !x.IsDeleted).Select(x => new RecipeCommentGetDto
                 {
                     Comment = x.Comment,
                     Id = x.Id,
@@ -145,9 +186,28 @@ namespace RecipeFinderApp.BL.Services.Implements
                     })
 
                 }).ToList(),
-                RecipeRatings = x.RecipeRatings,
+                RecipeRatings = x.RecipeRatings
+                .Where(r => !r.IsDeleted)
+                .Select(r => new RatingGetDto
+                {
+                    Id = r.Id,
+                    RatingRate = r.RatingRate,
+                    UserId = r.UserId,
+                    RecipeId = r.RecipeId,
+                    User = new UserGetDto
+                    {
+                        Id = r.User.Id,
+                        Fullname = r.User.UserName,
+                        ProfileImageUrl = r.User.ProfileImageUrl
+                    },
+                    Recipe = new RecipeBasicDto
+                    {
+                        Id = r.Recipe.Id,
+                        Title = r.Recipe.Title
+                    }
+                }).ToList(),
                 Ingredients = x.RecipeIngredients.Select(x => x.Ingredient.Name).ToList()
-            }, false);
+            },false);
 
             return recipe;
         }
@@ -243,7 +303,26 @@ namespace RecipeFinderApp.BL.Services.Implements
                 Title = x.Title,
                 Instruction = x.Instruction,
                 PreparationTime = x.PreparationTime,
-                RecipeRatings = x.RecipeRatings,
+                RecipeRatings = x.RecipeRatings
+                .Where(r => !r.IsDeleted)
+                .Select(r => new RatingGetDto
+                {
+                    Id = r.Id,
+                    RatingRate = r.RatingRate,
+                    UserId = r.UserId,
+                    RecipeId = r.RecipeId,
+                    User = new UserGetDto
+                    {
+                        Id = r.User.Id,
+                        Fullname = r.User.UserName,
+                        ProfileImageUrl = r.User.ProfileImageUrl
+                    },
+                    Recipe = new RecipeBasicDto
+                    {
+                        Id = r.Recipe.Id,
+                        Title = r.Recipe.Title
+                    }
+                }).ToList(),
                 RecipeComments = x.RecipeComments.Where(x => x.ParentId == null).Select(x => new RecipeCommentGetDto
                 {
                     Comment = x.Comment,
@@ -285,7 +364,26 @@ namespace RecipeFinderApp.BL.Services.Implements
                 Title = x.Title,
                 Instruction = x.Instruction,
                 PreparationTime = x.PreparationTime,
-                RecipeRatings = x.RecipeRatings,
+                RecipeRatings = x.RecipeRatings
+                .Where(r => !r.IsDeleted)
+                .Select(r => new RatingGetDto
+                {
+                    Id = r.Id,
+                    RatingRate = r.RatingRate,
+                    UserId = r.UserId,
+                    RecipeId = r.RecipeId,
+                    User = new UserGetDto
+                    {
+                        Id = r.User.Id,
+                        Fullname = r.User.UserName,
+                        ProfileImageUrl = r.User.ProfileImageUrl
+                    },
+                    Recipe = new RecipeBasicDto
+                    {
+                        Id = r.Recipe.Id,
+                        Title = r.Recipe.Title
+                    }
+                }).ToList(),
                 RecipeComments = x.RecipeComments.Where(x => x.ParentId == null).Select(x => new RecipeCommentGetDto
                 {
                     Comment = x.Comment,

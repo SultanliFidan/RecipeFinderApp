@@ -5615,11 +5615,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\RecipeFinderApp.API.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Final\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\RecipeFinderApp.API.csproj",
       "projectName": "RecipeFinderApp.API",
-      "projectPath": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\RecipeFinderApp.API.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Final\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\RecipeFinderApp.API.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Final\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5637,8 +5637,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj"
+            "C:\\Users\\User\\Desktop\\Final\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Final\\RecipeFinderApp\\RecipeFinderApp.API\\RecipeFinderApp.BL\\RecipeFinderApp.BL.csproj"
             }
           }
         }

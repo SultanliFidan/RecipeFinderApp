@@ -13,7 +13,7 @@ namespace RecipeFinderApp.BL.DTOs.UserDTOs
         public string Password { get; set; }
         public string Surname { get; set; }
         public string Name { get; set; }
-        public string? Image { get; set; }
+        //public string? Image { get; set; }
         public bool IsMale { get; set; }
     }
 }

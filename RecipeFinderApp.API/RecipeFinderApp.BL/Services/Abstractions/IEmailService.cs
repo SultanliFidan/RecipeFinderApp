@@ -10,7 +10,7 @@ namespace RecipeFinderApp.BL.Services.Abstractions
 {
     public interface IEmailService
     {
-        Task SendEmailAsync(string reason, string? email, string? forgotToken);
+        Task SendEmailAsync(string reason, string email, string? forgotToken);
 
 
     }

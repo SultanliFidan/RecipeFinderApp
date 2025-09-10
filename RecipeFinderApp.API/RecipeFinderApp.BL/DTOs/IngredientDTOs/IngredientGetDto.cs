@@ -1,4 +1,5 @@
-﻿using RecipeFinderApp.Core.Entities;
+﻿using RecipeFinderApp.BL.DTOs.RecipeIngredientDTOs;
+using RecipeFinderApp.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,6 @@ namespace RecipeFinderApp.BL.DTOs.IngredientDTOs
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public List<RecipeIngredient> RecipeIngredients { get; set; }
+        public List<RecipeIngredientGetDto> RecipeIngredients { get; set; }
     }
 }

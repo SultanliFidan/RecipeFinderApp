@@ -13,7 +13,7 @@ namespace RecipeFinderApp.BL.Validators.UserValidators
         public ResetPasswordDtoValidator()
         {
             RuleFor(x => x.Token)
-    .NotEmpty().WithMessage("Token is required.");
+                .NotEmpty().WithMessage("Token is required.");
 
             RuleFor(x => x.Email)
                 .NotEmpty().WithMessage("Email address is required.")

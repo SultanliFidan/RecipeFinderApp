@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using RecipeFinderApp.BL.DTOs.RecipeDTOs;
 using RecipeFinderApp.BL.DTOs.RecipeIngredientDTOs;
 using RecipeFinderApp.BL.Exceptioins.Common;
 using RecipeFinderApp.BL.Services.Abstractions;
@@ -33,9 +34,16 @@ namespace RecipeFinderApp.BL.Services.Implements
         {
             var recipeIngredients = await _recipeIngredientRepository.GetAllAsync(x => new RecipeIngredientGetDto
             {
+                Id = x.Id,
                 Quantity = x.Quantity,
                 RecipeId = x.RecipeId,
-                IngredientId = x.IngredientId
+                IngredientId = x.IngredientId,
+                Ingredient = x.Ingredient.Name,
+                Recipe = new RecipeBasicDto
+                {
+                    Id = x.Recipe.Id,
+                    Title = x.Recipe.Title
+                },
             },  true, false,false);
 
             return recipeIngredients;
@@ -45,9 +53,16 @@ namespace RecipeFinderApp.BL.Services.Implements
         {
             var recipeIngredient = await _recipeIngredientRepository.GetByIdAsync(id, x => new RecipeIngredientGetDto
             {
+                Id = x.Id,
                 Quantity = x.Quantity,
                 RecipeId = x.RecipeId,
-                IngredientId = x.IngredientId
+                IngredientId = x.IngredientId,
+                Ingredient = x.Ingredient.Name,
+                Recipe = new RecipeBasicDto
+                {
+                    Id = x.Recipe.Id,
+                    Title = x.Recipe.Title
+                },
             },  false);
 
             return recipeIngredient;

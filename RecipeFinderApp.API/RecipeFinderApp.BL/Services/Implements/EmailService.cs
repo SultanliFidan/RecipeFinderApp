@@ -44,19 +44,23 @@ namespace RecipeFinderApp.BL.Services.Implements
         }
 
 
-        public async Task SendEmailAsync(string reason, string? email, string? forgotToken)
+        public async Task SendEmailAsync(string reason, string email, string? forgotToken)
         {
             string token = null;
             if (reason == "confirmation")
             {
                 token = Guid.NewGuid().ToString();
-                email = _httpContextAccessor.HttpContext?.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
-                string? name = _httpContextAccessor.HttpContext?.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
+                if (string.IsNullOrEmpty(email))
+                {
+                    email = _httpContextAccessor.HttpContext?.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+                }
+       
+                //string? name = _httpContextAccessor.HttpContext?.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
 
-                if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(name))
+                if (string.IsNullOrEmpty(email))
                     throw new UnauthorizedAccessException("User is not authenticated");
 
-                _cache.Set(name, token, TimeSpan.FromMinutes(30));
+                _cache.Set(email, token, TimeSpan.FromMinutes(30));
 
             }
             else if (reason == "forgotPassword")
@@ -72,7 +76,7 @@ namespace RecipeFinderApp.BL.Services.Implements
                 client.UseDefaultCredentials = false;
                 MailAddress to = new MailAddress(email);
                 MailMessage message = new(_from, to);
-                message.Subject = "Reset Password";
+                message.Subject = "Your token";
                 if (reason == "confirmation")
                     message.Body = $"Hi, confirmation token: {token}";
                 else if (reason == "forgotPassword")

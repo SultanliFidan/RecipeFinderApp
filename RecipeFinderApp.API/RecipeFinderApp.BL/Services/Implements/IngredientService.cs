@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using RecipeFinderApp.BL.DTOs.IngredientDTOs;
+using RecipeFinderApp.BL.DTOs.RecipeDTOs;
+using RecipeFinderApp.BL.DTOs.RecipeIngredientDTOs;
 using RecipeFinderApp.BL.Exceptioins.Common;
 using RecipeFinderApp.BL.Services.Abstractions;
 using RecipeFinderApp.Core.Entities;
@@ -35,7 +37,20 @@ namespace RecipeFinderApp.BL.Services.Implements
             {
                 Id = x.Id,
                 Name = x.Name,
-                RecipeIngredients = x.RecipeIngredients
+                RecipeIngredients = x.RecipeIngredients.Select(x => new RecipeIngredientGetDto
+                {
+                    IngredientId = x.IngredientId,
+                    Ingredient = x.Ingredient.Name,
+                    RecipeId = x.RecipeId,
+                    Recipe = new RecipeBasicDto
+                    {
+                        Id = x.Recipe.Id,
+                        Title = x.Recipe.Title
+                    },
+                    Quantity = x.Quantity,
+                    Id = x.Id
+                }).ToList()
+
             }, false, true,true); 
 
             return ingredients;
@@ -47,7 +62,19 @@ namespace RecipeFinderApp.BL.Services.Implements
             {
                 Id = x.Id,
                 Name = x.Name,
-                RecipeIngredients = x.RecipeIngredients
+                RecipeIngredients = x.RecipeIngredients.Select(x => new RecipeIngredientGetDto
+                {
+                    IngredientId = x.IngredientId,
+                    Ingredient = x.Ingredient.Name,
+                    RecipeId = x.RecipeId,
+                    Recipe = new RecipeBasicDto
+                    {
+                        Id = x.Recipe.Id,
+                        Title = x.Recipe.Title
+                    },
+                    Quantity = x.Quantity,
+                    Id = x.Id
+                }).ToList()
             }, false);
 
             return ingredient;
